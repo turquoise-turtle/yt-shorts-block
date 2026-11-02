@@ -37,4 +37,4 @@ For a managed fleet, deploy it through Google Admin (Devices, Chrome, Apps and e
 
 ## Checking it works
 
-Open any Short on either site. You should see a dark panel with a red block icon and the message, no video, no comments, no arrows, and the mouse wheel, swipes and arrow keys should do nothing. Open the Home page or a normal video: everything should behave as usual. The checks run during development are recorded in `.agent/STATE.md`.
+Open any Short on either site. You should see a dark panel with a red block icon and the message, no video, no comments, no arrows, and the mouse wheel, swipes and arrow keys should do nothing. Open the Home page or a normal video: everything should behave as usual.
