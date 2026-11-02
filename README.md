@@ -2,6 +2,8 @@
 
 A minimal Manifest V3 Chrome extension for schools. Every YouTube Short is replaced with a plain block screen, the comments and description panels are hidden, the surrounding recommended Shorts are hidden, and scrolling or arrowing to the next Short is disabled. The rest of YouTube is untouched.
 
+![A YouTube Short replaced by the block screen](store/screenshot-1280x800.png)
+
 It is three small files, needs no permissions, has no background worker, no options page and no network access, and does nothing until a Shorts page is actually open. That keeps it cheap enough for low-end Chromebooks.
 
 ## Files
@@ -11,6 +13,8 @@ It is three small files, needs no permissions, has no background worker, no opti
 | `manifest.json` | Declares one content script for `https://www.youtube.com/*` and `https://m.youtube.com/*`. |
 | `content.js` | Decides when the block applies, keeps the video paused, swallows scroll and navigation keys. |
 | `block.css` | Hides the player, overlay, panels and arrows, and draws the block screen with pseudo-elements. |
+| `icons/` | Extension icons at 16, 32, 48 and 128 px, rendered from `icon.svg`. |
+| `store/` | Web Store listing screenshot (1280 x 800 PNG). |
 
 ## How it works
 
@@ -27,7 +31,7 @@ Students can still leave the page through the sidebar, the search box or the bro
 
 For a quick trial, open `chrome://extensions`, turn on Developer mode, choose **Load unpacked** and select this folder.
 
-For a managed fleet, deploy it through Google Admin (Devices, Chrome, Apps and extensions, Users and browsers) as a force-installed extension. Google Admin needs either a Chrome Web Store listing or a self-hosted packed `.crx` with an update URL. Publishing to the Web Store requires a 128 px icon and a short privacy declaration; this extension collects nothing, so the declaration is simple. Students on managed devices cannot disable a force-installed extension.
+For a managed fleet, deploy it through Google Admin (Devices, Chrome, Apps and extensions, Users and browsers) as a force-installed extension. Google Admin needs either a Chrome Web Store listing or a self-hosted packed `.crx` with an update URL. Publishing to the Web Store needs the icons and screenshot in this repository plus a short privacy declaration; this extension collects nothing, so the declaration is simple. Students on managed devices cannot disable a force-installed extension.
 
 ## Limitations
 
