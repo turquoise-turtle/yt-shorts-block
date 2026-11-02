@@ -1,0 +1,53 @@
+/* Applied only while <html class="ytsb-blocked"> is set by content.js. */
+
+/* Hide the video, the blurred cinematic backdrop, stickers and the title,
+   channel, like and comment overlay, but keep #player-container itself so
+   the block screen takes the exact space the video used. */
+.ytsb-blocked ytd-shorts #player-container > *,
+.ytsb-blocked ytd-shorts #short-video-container > :not(:has(#player-container)),
+.ytsb-blocked ytd-shorts #experiment-overlay,
+.ytsb-blocked ytd-shorts #overlay-initial-container,
+.ytsb-blocked ytd-shorts ytd-reel-player-overlay-renderer,
+.ytsb-blocked ytd-shorts ytd-reel-player-overlay-renderer-cow,
+.ytsb-blocked ytd-shorts reel-action-bar-view-model,
+/* Comments and description side panels. */
+.ytsb-blocked ytd-shorts #shorts-panel-container,
+.ytsb-blocked ytd-shorts ytd-engagement-panel-section-list-renderer,
+/* Previous/next arrows. */
+.ytsb-blocked ytd-shorts .navigation-button {
+  display: none !important;
+}
+
+/* Thumbnails of the surrounding Shorts in the feed. visibility rather than
+   display so YouTube's scroll-snap layout stays intact. */
+.ytsb-blocked ytd-shorts .reel-video-in-sequence-thumbnail {
+  visibility: hidden !important;
+}
+
+/* The block screen, drawn with pseudo-elements so no DOM is inserted. */
+.ytsb-blocked ytd-shorts #player-container {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: #0f0f0f !important;
+  color: #f1f1f1;
+  font-family: "Roboto", "Arial", sans-serif;
+  text-align: center;
+}
+
+.ytsb-blocked ytd-shorts #player-container::before {
+  content: "";
+  width: 96px;
+  height: 96px;
+  background: no-repeat center / contain
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='%23ff4e45' stroke-width='2.2'/%3E%3Cpath d='M5.6 5.6l12.8 12.8' stroke='%23ff4e45' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+.ytsb-blocked ytd-shorts #player-container::after {
+  content: "YouTube Shorts are blocked on this device.";
+  padding: 0 24px;
+  font-size: 18px;
+  line-height: 1.4;
+}
