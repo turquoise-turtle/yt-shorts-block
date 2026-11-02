@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Shorts Block",
   "version": "1.0.0",
-  "description": "Replaces every YouTube Short with a block screen, hides comments and recommendations, and stops scrolling between Shorts. Covers www and m.youtube.com.",
+  "description": "Blocks YouTube Shorts with a block screen, hides comments and recommendations, and disables scrolling. Covers mobile YouTube too.",
   "icons": {
     "16": "icons/icon-16.png",
     "32": "icons/icon-32.png",
