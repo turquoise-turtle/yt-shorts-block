@@ -15,6 +15,7 @@ It is three small files, needs no permissions, has no background worker, no opti
 | `block.css` | Hides the player, overlay, panels and arrows, and draws the block screen with pseudo-elements. |
 | `icons/` | Extension icons at 16, 32, 48 and 128 px, rendered from `icon.svg`. |
 | `store/` | Web Store listing screenshot (1280 x 800 PNG). |
+| `PRIVACY.md` | Privacy policy: nothing is collected, stored or transmitted. |
 
 ## How it works
 
