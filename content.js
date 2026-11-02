@@ -42,7 +42,7 @@
   };
 
   const pauseShorts = () => {
-    const videos = document.querySelectorAll('ytd-shorts video');
+    const videos = document.querySelectorAll('ytd-shorts video, shorts-video video');
     for (const v of videos) v.pause();
   };
 
@@ -70,14 +70,34 @@
   );
 
   // YouTube is a single-page app: the URL changes without a page load, so the
-  // block state has to follow its own navigation events. "start" fires before
-  // the URL updates, hence reading pageType from the event rather than the
-  // location; its detail is small, unlike the finish event's.
+  // block state has to follow its own navigation events.
+  const syncWithLocation = () => setBlocked(isShortsPath());
+
+  // www.youtube.com: "start" fires before the URL updates, hence reading
+  // pageType from the event rather than the location; its detail is small,
+  // unlike the finish event's, which is never read.
   document.addEventListener('yt-navigate-start', (e) => {
     const pageType = e.detail && e.detail.pageType;
     if (pageType) setBlocked(pageType === 'shorts');
   });
-  document.addEventListener('yt-navigate-finish', () => setBlocked(isShortsPath()));
+  document.addEventListener('yt-navigate-finish', syncWithLocation);
 
-  setBlocked(isShortsPath());
+  // m.youtube.com is a different app with its own events, dispatched on
+  // window: "state-change" fires as soon as the URL has changed and
+  // "state-navigateend" once the page has rendered.
+  window.addEventListener('state-change', syncWithLocation);
+  window.addEventListener('state-navigateend', syncWithLocation);
+
+  // Safety net for the mobile app, whose event names are undocumented: it
+  // swaps a page-* class on <body> for every page it renders, and watching
+  // that one attribute costs nothing between navigations.
+  const watchBodyClass = () =>
+    new MutationObserver(syncWithLocation).observe(document.body, {
+      attributes: true,
+      attributeFilter: ['class'],
+    });
+  if (document.body) watchBodyClass();
+  else document.addEventListener('DOMContentLoaded', watchBodyClass, { once: true });
+
+  syncWithLocation();
 })();

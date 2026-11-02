@@ -24,8 +24,25 @@
   visibility: hidden !important;
 }
 
+/* m.youtube.com: the active Short lives in <shorts-video>, which keeps its
+   explicit height when its children are hidden. Neighbouring Shorts are
+   plain carousel slides showing a poster frame as a background image, and
+   comments open in a bottom sheet. */
+.ytsb-blocked shorts-video > *,
+.ytsb-blocked #player-thumbnail-overlay,
+.ytsb-blocked #player-endscreen-container,
+.ytsb-blocked ytm-app panel-container,
+.ytsb-blocked ytm-app bottom-sheet-container {
+  display: none !important;
+}
+
+.ytsb-blocked ytm-app .carousel-item {
+  background-image: none !important;
+}
+
 /* The block screen, drawn with pseudo-elements so no DOM is inserted. */
-.ytsb-blocked ytd-shorts #player-container {
+.ytsb-blocked ytd-shorts #player-container,
+.ytsb-blocked shorts-video {
   display: flex !important;
   flex-direction: column;
   align-items: center;
@@ -37,7 +54,8 @@
   text-align: center;
 }
 
-.ytsb-blocked ytd-shorts #player-container::before {
+.ytsb-blocked ytd-shorts #player-container::before,
+.ytsb-blocked shorts-video::before {
   content: "";
   width: 96px;
   height: 96px;
@@ -45,7 +63,8 @@
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='%23ff4e45' stroke-width='2.2'/%3E%3Cpath d='M5.6 5.6l12.8 12.8' stroke='%23ff4e45' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E");
 }
 
-.ytsb-blocked ytd-shorts #player-container::after {
+.ytsb-blocked ytd-shorts #player-container::after,
+.ytsb-blocked shorts-video::after {
   content: "YouTube Shorts are blocked on this device.";
   padding: 0 24px;
   font-size: 18px;

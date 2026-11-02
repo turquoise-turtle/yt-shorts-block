@@ -8,18 +8,18 @@ It is three small files, needs no permissions, has no background worker, no opti
 
 | File | Purpose |
 | --- | --- |
-| `manifest.json` | Declares one content script for `https://www.youtube.com/*`. |
+| `manifest.json` | Declares one content script for `https://www.youtube.com/*` and `https://m.youtube.com/*`. |
 | `content.js` | Decides when the block applies, keeps the video paused, swallows scroll and navigation keys. |
 | `block.css` | Hides the player, overlay, panels and arrows, and draws the block screen with pseudo-elements. |
 
 ## How it works
 
-YouTube is a single-page app, so the URL changes without a page load. The content script runs at `document_start` and listens for YouTube's own `yt-navigate-start` and `yt-navigate-finish` events. When the page type is Shorts it adds `class="ytsb-blocked"` to `<html>`; otherwise it removes it. Everything visual is a CSS rule under that class, so toggling one class is the whole cost of blocking or unblocking.
+YouTube is a single-page app, so the URL changes without a page load. The content script runs at `document_start` and listens for YouTube's own navigation events: `yt-navigate-start` and `yt-navigate-finish` on the desktop site, `state-change` and `state-navigateend` on the mobile site, with a one-attribute observer on the mobile `<body>` class as a safety net. When the page is a Short it adds `class="ytsb-blocked"` to `<html>`; otherwise it removes it. Everything visual is a CSS rule under that class, so toggling one class is the whole cost of blocking or unblocking.
 
-- **Block screen:** `#player-container` keeps its size while its children are hidden, so the block icon and message are drawn on it with `::before` and `::after`. No DOM is inserted and nothing is observed with a `MutationObserver`.
+- **Block screen:** the player box (`#player-container` on desktop, `<shorts-video>` on mobile) keeps its size while its children are hidden, so the block icon and message are drawn on it with `::before` and `::after`. No DOM is inserted and nothing in the page tree is observed.
 - **Sound:** CSS cannot stop audio. A single capture-phase `play` listener on `document` pauses any media element that starts while a Short is blocked. YouTube reuses one player across Shorts, so this covers every Short the student lands on.
 - **Scrolling:** YouTube moves between Shorts on wheel, touch and the arrow and page keys. Capture-phase listeners on `window` stop those events before YouTube sees them. They are attached only while a Short is blocked, because a non-passive wheel listener forces every scroll on the site through the main thread. Keys are ignored when the focus is in a text field, so the search box still works.
-- **Comments and recommendations:** the side panels (`#shorts-panel-container`), the overlay with title, channel, like and comment buttons, the previous and next arrows and the thumbnails of neighbouring Shorts are hidden.
+- **Comments and recommendations:** the side panels (`#shorts-panel-container`), the overlay with title, channel, like and comment buttons, the previous and next arrows and the thumbnails of neighbouring Shorts are hidden. On mobile the same goes for the comments bottom sheet and the poster frames on the neighbouring carousel slides.
 
 Students can still leave the page through the sidebar, the search box or the browser's back button; the aim is to make Shorts useless, not to trap the tab.
 
@@ -31,10 +31,10 @@ For a managed fleet, deploy it through Google Admin (Devices, Chrome, Apps and e
 
 ## Limitations
 
-- Only `www.youtube.com` is matched. Managed Chromebooks use the desktop site, but `m.youtube.com` has a different layout and is not handled.
+- Both `www.youtube.com` and `m.youtube.com` are covered. Other hosts such as `youtube-nocookie.com` embeds are not.
 - Shorts embedded on other sites and the Shorts shelf on the home page are untouched; the home shelf is a few more CSS rules if wanted.
 - YouTube changes its markup from time to time. The selectors in `block.css` were checked against the live site on 2 November 2026; if a change slips through, the video is still paused by `content.js`, but the block screen or an overlay element may need a selector update.
 
 ## Checking it works
 
-Open any Short. You should see a dark panel with a red block icon and the message, no video, no comments, no arrows, and the mouse wheel and arrow keys should do nothing. Open the Home page or a normal video: everything should behave as usual. The checks run during development are recorded in `.agent/STATE.md`.
+Open any Short on either site. You should see a dark panel with a red block icon and the message, no video, no comments, no arrows, and the mouse wheel, swipes and arrow keys should do nothing. Open the Home page or a normal video: everything should behave as usual. The checks run during development are recorded in `.agent/STATE.md`.

@@ -2,13 +2,20 @@
   "manifest_version": 3,
   "name": "Shorts Block",
   "version": "1.0.0",
-  "description": "Replaces every YouTube Short with a block screen, hides comments and recommendations, and stops scrolling between Shorts.",
+  "description": "Replaces every YouTube Short with a block screen, hides comments and recommendations, and stops scrolling between Shorts. Covers www and m.youtube.com.",
   "minimum_chrome_version": "105",
   "content_scripts": [
     {
-      "matches": ["https://www.youtube.com/*"],
-      "css": ["block.css"],
-      "js": ["content.js"],
+      "matches": [
+        "https://www.youtube.com/*",
+        "https://m.youtube.com/*"
+      ],
+      "css": [
+        "block.css"
+      ],
+      "js": [
+        "content.js"
+      ],
       "run_at": "document_start"
     }
   ]
