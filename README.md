@@ -53,6 +53,8 @@ In Google Admin, open the extension under Devices, Chrome, Apps and extensions, 
 
 Leave out any setting to keep its default. Chrome shows the values it has received at `chrome://policy`, under the extension's ID. Policy changes take effect on open YouTube tabs without a reload.
 
+**Tip:** If you would rather not depend on YouTube's page markup, turn on `redirect`. Blocking relies on CSS selectors that YouTube may change; when that happens the Short stays paused, but its title, comments or first frame may become visible. A redirect only needs to recognise the Shorts address, so it keeps working through markup changes. The trade-off is that students are sent away without the "Shorts are blocked" message.
+
 ## Installing
 
 For a quick trial, open `chrome://extensions`, turn on Developer mode, choose **Load unpacked** and select this folder.
