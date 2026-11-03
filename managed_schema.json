@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "properties": {
+    "redirect": {
+      "title": "Redirect Shorts",
+      "description": "Send students to redirect_url instead of showing the block screen when they open a Short. Defaults to false.",
+      "type": "boolean"
+    },
+    "redirect_url": {
+      "title": "Redirect address",
+      "description": "Where to send students when redirect is true. Must be an http or https address. Defaults to https://youtube.com.",
+      "type": "string"
+    },
+    "hide_shorts_in_feeds": {
+      "title": "Hide Shorts on the home page and in search results",
+      "description": "Hide Shorts shelves on the home page and in search results. Defaults to true.",
+      "type": "boolean"
+    }
+  }
+}

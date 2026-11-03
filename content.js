@@ -1,14 +1,24 @@
 'use strict';
 
-// Everything visual is done by block.css, keyed off one class on <html>.
-// This script only decides when that class applies, keeps the video paused,
-// and swallows the inputs YouTube uses to move between Shorts.
+// Everything visual is done by block.css, keyed off classes on <html>.
+// This script only decides when those classes apply, keeps the video paused,
+// swallows the inputs YouTube uses to move between Shorts, and redirects when
+// an administrator has asked for that.
 (() => {
   const BLOCKED_CLASS = 'ytsb-blocked';
+  const HIDE_FEEDS_CLASS = 'ytsb-hide-feeds';
+  const HOME_CLASS = 'ytsb-home';
   const root = document.documentElement;
   let blocked = false;
 
-  const isShortsPath = () => /^\/shorts(\/|$)/.test(location.pathname);
+  const DEFAULT_REDIRECT_URL = 'https://youtube.com';
+  let settings = { redirect: false, redirectUrl: DEFAULT_REDIRECT_URL, hideFeeds: true };
+
+  // Storage reads are asynchronous, so the default (hide Shorts shelves) is
+  // applied up front to avoid a flash of Shorts before the settings arrive.
+  root.classList.add(HIDE_FEEDS_CLASS);
+
+  const isShortsPath = (path = location.pathname) => /^\/shorts(\/|$)/.test(path);
 
   const isEditable = (el) =>
     el instanceof HTMLElement &&
@@ -46,6 +56,15 @@
     for (const v of videos) v.pause();
   };
 
+  // Replace the history entry when it is the Short itself, so Back does not
+  // bounce into the redirect again; otherwise (desktop navigation starts
+  // before the URL changes) keep the page the student came from.
+  const maybeRedirect = () => {
+    if (!blocked || !settings.redirect) return;
+    if (isShortsPath()) location.replace(settings.redirectUrl);
+    else location.assign(settings.redirectUrl);
+  };
+
   const setBlocked = (on) => {
     if (on === blocked) return;
     blocked = on;
@@ -53,10 +72,43 @@
     if (on) {
       attachInputBlockers();
       pauseShorts();
+      maybeRedirect();
     } else {
       detachInputBlockers();
     }
   };
+
+  // Only http(s) targets are accepted, and never a Short, which would loop.
+  const parseRedirectUrl = (value) => {
+    try {
+      const url = new URL(value);
+      const isHttp = url.protocol === 'https:' || url.protocol === 'http:';
+      const isShort = /(^|\.)youtube\.com$/.test(url.hostname) && isShortsPath(url.pathname);
+      if (isHttp && !isShort) return url.href;
+    } catch {}
+    return DEFAULT_REDIRECT_URL;
+  };
+
+  // Every setting comes only from managed policy (managed_schema.json), so
+  // students have nothing to change. Unset or invalid values keep the defaults.
+  const loadSettings = async () => {
+    let managed = {};
+    try {
+      managed = await chrome.storage.managed.get(null);
+    } catch {}
+    settings = {
+      redirect: managed.redirect === true,
+      redirectUrl: parseRedirectUrl(managed.redirect_url ?? DEFAULT_REDIRECT_URL),
+      hideFeeds: managed.hide_shorts_in_feeds !== false,
+    };
+    root.classList.toggle(HIDE_FEEDS_CLASS, settings.hideFeeds);
+    maybeRedirect();
+  };
+
+  chrome.storage.onChanged.addListener((changes, area) => {
+    if (area === 'managed') loadSettings();
+  });
+  loadSettings();
 
   // Media "play" does not bubble, but it still passes through the capture
   // phase, so one listener covers every player YouTube ever creates. CSS hides
@@ -71,7 +123,12 @@
 
   // YouTube is a single-page app: the URL changes without a page load, so the
   // block state has to follow its own navigation events.
-  const syncWithLocation = () => setBlocked(isShortsPath());
+  // The home class only scopes the mobile feed rules: unlike the desktop app,
+  // the mobile app marks nothing in the page as being the home page.
+  const syncWithLocation = () => {
+    root.classList.toggle(HOME_CLASS, location.pathname === '/');
+    setBlocked(isShortsPath());
+  };
 
   // www.youtube.com: "start" fires before the URL updates, hence reading
   // pageType from the event rather than the location; its detail is small,

@@ -70,3 +70,18 @@
   font-size: 18px;
   line-height: 1.4;
 }
+
+/* Shorts shelves on the home page and in search results, while
+   <html class="ytsb-hide-feeds"> is set (the default). These selectors track
+   YouTube's markup as of November 2026 and are the most likely to need
+   updating. :has() is limited to shelf and result elements, of which a page
+   holds only a few dozen, so it stays cheap on low-end devices. */
+.ytsb-hide-feeds ytd-browse[page-subtype="home"] ytd-rich-shelf-renderer[is-shorts],
+.ytsb-hide-feeds ytd-search grid-shelf-view-model:has(ytm-shorts-lockup-view-model),
+.ytsb-hide-feeds ytd-search ytd-reel-shelf-renderer,
+.ytsb-hide-feeds ytd-search ytd-video-renderer:has(a#thumbnail[href^="/shorts/"]),
+.ytsb-hide-feeds ytm-search grid-shelf-view-model:has(ytm-shorts-lockup-view-model),
+.ytsb-hide-feeds ytm-search ytm-reel-shelf-renderer,
+.ytsb-hide-feeds.ytsb-home ytm-browse ytm-rich-section-renderer:has(ytm-shorts-lockup-view-model) {
+  display: none !important;
+}
