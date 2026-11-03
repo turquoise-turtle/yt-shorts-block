@@ -85,3 +85,21 @@
 .ytsb-hide-feeds.ytsb-home ytm-browse ytm-rich-section-renderer:has(ytm-shorts-lockup-view-model) {
   display: none !important;
 }
+
+/* Shorts tabs, under the same setting. The mobile bottom-bar tab is matched by
+   its pivot-shorts class, which is the same in every language. The channel
+   tab only has its displayed label to go on, so tab-title must be extended
+   with the translation for any interface language other than English. */
+.ytsb-hide-feeds ytm-pivot-bar-item-renderer:has(> .pivot-shorts),
+.ytsb-hide-feeds yt-tab-shape[tab-title="Shorts"] {
+  display: none !important;
+}
+
+/* Desktop sidebar Shorts entry. Hiding the link alone collapses its entry, so
+   no :has() is needed. The narrow icon sidebar links to /shorts/ in every
+   language; the full sidebar's entry has no link address, only its English
+   title, so like the channel tab it needs a translation for other languages. */
+.ytsb-hide-feeds ytd-guide-entry-renderer > a#endpoint[title="Shorts"],
+.ytsb-hide-feeds ytd-mini-guide-entry-renderer > a[href="/shorts/"] {
+  display: none !important;
+}

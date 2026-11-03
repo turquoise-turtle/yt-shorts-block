@@ -26,7 +26,7 @@ YouTube is a single-page app, so the URL changes without a page load. The conten
 - **Sound:** CSS cannot stop audio. A single capture-phase `play` listener on `document` pauses any media element that starts while a Short is blocked. YouTube reuses one player across Shorts, so this covers every Short the student lands on.
 - **Scrolling:** YouTube moves between Shorts on wheel, touch and the arrow and page keys. Capture-phase listeners on `window` stop those events before YouTube sees them. They are attached only while a Short is blocked, because a non-passive wheel listener forces every scroll on the site through the main thread. Keys are ignored when the focus is in a text field, so the search box still works.
 - **Comments and recommendations:** the side panels (`#shorts-panel-container`), the overlay with title, channel, like and comment buttons, the previous and next arrows and the thumbnails of neighbouring Shorts are hidden. On mobile the same goes for the comments bottom sheet and the poster frames on the neighbouring carousel slides.
-- **Shorts shelves:** while `hide_shorts_in_feeds` is on, `class="ytsb-hide-feeds"` on `<html>` hides the Shorts shelves on the home page and in search results. The class is set at `document_start` before the policy is read, so shelves never flash up. The mobile app marks nothing as its home page, so the script also sets `class="ytsb-home"` on `/`.
+- **Shorts shelves:** while `hide_shorts_in_feeds` is on, `class="ytsb-hide-feeds"` on `<html>` hides the Shorts shelves on the home page and in search results, the Shorts entry in the desktop sidebar, the Shorts tab in the mobile bottom bar, and the Shorts tab on channel pages. The class is set at `document_start` before the policy is read, so shelves never flash up. The mobile app marks nothing as its home page, so the script also sets `class="ytsb-home"` on `/`.
 - **Redirect:** when the `redirect` policy is on, opening a Short sends the student to `redirect_url` instead of showing the block screen. A Short opened directly replaces its own history entry, so Back does not bounce straight into the redirect again. A Short clicked from another page keeps that page in history.
 
 Students can still leave the page through the sidebar, the search box or the browser's back button; the aim is to make Shorts useless, not to trap the tab.
@@ -39,7 +39,7 @@ Every setting comes from managed policy only; students have nothing to change. W
 | --- | --- | --- | --- |
 | `redirect` | boolean | `false` | Send students to `redirect_url` instead of showing the block screen. |
 | `redirect_url` | string | `https://youtube.com` | Where the redirect goes. Only `http` and `https` addresses are accepted, and never a Short; anything else falls back to the default. |
-| `hide_shorts_in_feeds` | boolean | `true` | Hide Shorts shelves on the home page and in search results. |
+| `hide_shorts_in_feeds` | boolean | `true` | Hide Shorts shelves on the home page and in search results, the Shorts entry in the desktop sidebar, the Shorts tab in the mobile bottom bar, and the Shorts tab on channel pages. |
 
 In Google Admin, open the extension under Devices, Chrome, Apps and extensions, and paste the settings into **Policy for extensions**:
 
@@ -65,6 +65,7 @@ For a managed fleet, deploy it through Google Admin (Devices, Chrome, Apps and e
 
 - Both `www.youtube.com` and `m.youtube.com` are covered. Other hosts such as `youtube-nocookie.com` embeds are not.
 - Shorts embedded on other sites are untouched. Shorts shelves are hidden only on the home page and in search results, not on channel or watch pages.
+- The channel Shorts tab and the full-width sidebar's Shorts entry are matched by their English labels, so a non-English interface still shows them. The narrow icon sidebar and the mobile bottom bar are matched in a language-neutral way. The Shorts filter chip on desktop search results has no hook other than its visible text, so it is left alone; opening a Short from it still hits the block screen or redirect.
 - YouTube changes its markup from time to time. The selectors in `block.css` were last checked against the live site on 3 November 2026. The Shorts shelf selectors are the most likely to break; if they do, shelves simply reappear. If a block-screen selector breaks, the video is still paused by `content.js`, but the block screen or an overlay element may need a selector update.
 
 ## Checking it works

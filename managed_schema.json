@@ -12,8 +12,8 @@
       "type": "string"
     },
     "hide_shorts_in_feeds": {
-      "title": "Hide Shorts on the home page and in search results",
-      "description": "Hide Shorts shelves on the home page and in search results. Defaults to true.",
+      "title": "Hide Shorts shelves and tabs",
+      "description": "Hide Shorts shelves on the home page and in search results, the Shorts entry in the desktop sidebar, the Shorts tab in the mobile bottom bar, and the Shorts tab on channel pages. Defaults to true.",
       "type": "boolean"
     }
   }
