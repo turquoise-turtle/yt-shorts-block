@@ -1,0 +1,1593 @@
+{
+  "recorded": "2026-11-03T22:54:49.212Z",
+  "version": "1.2.0",
+  "selectors": {
+    "block.css|.ytsb-blocked ytd-shorts #player-container > *": {
+      "scenarios": {
+        "desktop-short": 3
+      },
+      "fps": [
+        {
+          "tag": "html",
+          "id": "",
+          "cls": [],
+          "attrs": [
+            "lang",
+            "darker-dark-theme",
+            "darker-dark-theme-deprecate",
+            "system-icons",
+            "color-version",
+            "typography",
+            "typography-spacing"
+          ],
+          "parent": "",
+          "kids": [
+            "head",
+            "body"
+          ],
+          "text": "body {transition: opacity ease"
+        },
+        {
+          "tag": "ytd-shorts",
+          "id": "",
+          "cls": [
+            "ytd-page-manager"
+          ],
+          "attrs": [
+            "enable-previous-continuation",
+            "enable-neon-buttons",
+            "move-ads-overlay-to-shorts",
+            "is-up-arrow-hidden",
+            "shorts-layout",
+            "role",
+            "mini-guide-visible"
+          ],
+          "parent": "ytd-page-manager",
+          "kids": [
+            "div"
+          ],
+          "text": "Baby Sea Creature 🐳Tap to unm"
+        },
+        {
+          "tag": "div",
+          "id": "player-container",
+          "cls": [
+            "player-container",
+            "ytd-reel-video-renderer"
+          ],
+          "attrs": [],
+          "parent": "div",
+          "kids": [
+            "ytd-player",
+            "div",
+            "dom-if"
+          ],
+          "text": "Baby Sea Creature 🐳Tap to unm"
+        },
+        {
+          "tag": "ytd-player",
+          "id": "player",
+          "cls": [
+            "ytd-shorts"
+          ],
+          "attrs": [
+            "context",
+            "disable-touch-gestures",
+            "aria-hidden"
+          ],
+          "parent": "div",
+          "kids": [
+            "div"
+          ],
+          "text": "Baby Sea Creature 🐳Tap to unm"
+        }
+      ]
+    },
+    "block.css|.ytsb-blocked ytd-shorts #short-video-container > :not(:has(#player-container))": {
+      "scenarios": {
+        "desktop-short": 3
+      },
+      "fps": [
+        {
+          "tag": "html",
+          "id": "",
+          "cls": [],
+          "attrs": [
+            "lang",
+            "darker-dark-theme",
+            "darker-dark-theme-deprecate",
+            "system-icons",
+            "color-version",
+            "typography",
+            "typography-spacing"
+          ],
+          "parent": "",
+          "kids": [
+            "head",
+            "body"
+          ],
+          "text": "body {transition: opacity ease"
+        },
+        {
+          "tag": "ytd-shorts",
+          "id": "",
+          "cls": [
+            "ytd-page-manager"
+          ],
+          "attrs": [
+            "enable-previous-continuation",
+            "enable-neon-buttons",
+            "move-ads-overlay-to-shorts",
+            "is-up-arrow-hidden",
+            "shorts-layout",
+            "role",
+            "mini-guide-visible"
+          ],
+          "parent": "ytd-page-manager",
+          "kids": [
+            "div"
+          ],
+          "text": "Baby Sea Creature 🐳Tap to unm"
+        },
+        {
+          "tag": "div",
+          "id": "short-video-container",
+          "cls": [
+            "short-video-container",
+            "ytd-reel-video-renderer"
+          ],
+          "attrs": [],
+          "parent": "ytd-reel-video-renderer",
+          "kids": [
+            "div"
+          ],
+          "text": "Baby Sea Creature 🐳Tap to unm"
+        },
+        {
+          "tag": "div",
+          "id": "sticker-layer",
+          "cls": [
+            "sticker-layer",
+            "ytd-reel-video-renderer"
+          ],
+          "attrs": [],
+          "parent": "div",
+          "kids": [],
+          "text": ""
+        }
+      ]
+    },
+    "block.css|.ytsb-blocked ytd-shorts #experiment-overlay": {
+      "scenarios": {
+        "desktop-short": 1
+      },
+      "fps": [
+        {
+          "tag": "html",
+          "id": "",
+          "cls": [],
+          "attrs": [
+            "lang",
+            "darker-dark-theme",
+            "darker-dark-theme-deprecate",
+            "system-icons",
+            "color-version",
+            "typography",
+            "typography-spacing"
+          ],
+          "parent": "",
+          "kids": [
+            "head",
+            "body"
+          ],
+          "text": "body {transition: opacity ease"
+        },
+        {
+          "tag": "ytd-shorts",
+          "id": "",
+          "cls": [
+            "ytd-page-manager"
+          ],
+          "attrs": [
+            "enable-previous-continuation",
+            "enable-neon-buttons",
+            "move-ads-overlay-to-shorts",
+            "is-up-arrow-hidden",
+            "shorts-layout",
+            "role",
+            "mini-guide-visible"
+          ],
+          "parent": "ytd-page-manager",
+          "kids": [
+            "div"
+          ],
+          "text": "Baby Sea Creature 🐳Tap to unm"
+        },
+        {
+          "tag": "div",
+          "id": "experiment-overlay",
+          "cls": [
+            "overlay",
+            "ytd-reel-video-renderer"
+          ],
+          "attrs": [],
+          "parent": "ytd-reel-video-renderer",
+          "kids": [
+            "ytd-reel-player-overlay-renderer-cow"
+          ],
+          "text": "@GreenBroRantsSubscribeBaby Se"
+        }
+      ]
+    },
+    "block.css|.ytsb-blocked ytd-shorts #overlay-initial-container": {
+      "scenarios": {
+        "desktop-short": 1
+      },
+      "fps": [
+        {
+          "tag": "html",
+          "id": "",
+          "cls": [],
+          "attrs": [
+            "lang",
+            "darker-dark-theme",
+            "darker-dark-theme-deprecate",
+            "system-icons",
+            "color-version",
+            "typography",
+            "typography-spacing"
+          ],
+          "parent": "",
+          "kids": [
+            "head",
+            "body"
+          ],
+          "text": "body {transition: opacity ease"
+        },
+        {
+          "tag": "ytd-shorts",
+          "id": "",
+          "cls": [
+            "ytd-page-manager"
+          ],
+          "attrs": [
+            "enable-previous-continuation",
+            "enable-neon-buttons",
+            "move-ads-overlay-to-shorts",
+            "is-up-arrow-hidden",
+            "shorts-layout",
+            "role",
+            "mini-guide-visible"
+          ],
+          "parent": "ytd-page-manager",
+          "kids": [
+            "div"
+          ],
+          "text": "Baby Sea Creature 🐳Tap to unm"
+        },
+        {
+          "tag": "div",
+          "id": "overlay-initial-container",
+          "cls": [
+            "ytd-shorts"
+          ],
+          "attrs": [],
+          "parent": "div",
+          "kids": [],
+          "text": ""
+        }
+      ]
+    },
+    "block.css|.ytsb-blocked ytd-shorts ytd-reel-player-overlay-renderer-cow": {
+      "scenarios": {
+        "desktop-short": 1
+      },
+      "fps": [
+        {
+          "tag": "html",
+          "id": "",
+          "cls": [],
+          "attrs": [
+            "lang",
+            "darker-dark-theme",
+            "darker-dark-theme-deprecate",
+            "system-icons",
+            "color-version",
+            "typography",
+            "typography-spacing"
+          ],
+          "parent": "",
+          "kids": [
+            "head",
+            "body"
+          ],
+          "text": "body {transition: opacity ease"
+        },
+        {
+          "tag": "ytd-shorts",
+          "id": "",
+          "cls": [
+            "ytd-page-manager"
+          ],
+          "attrs": [
+            "enable-previous-continuation",
+            "enable-neon-buttons",
+            "move-ads-overlay-to-shorts",
+            "is-up-arrow-hidden",
+            "shorts-layout",
+            "role",
+            "mini-guide-visible"
+          ],
+          "parent": "ytd-page-manager",
+          "kids": [
+            "div"
+          ],
+          "text": "Baby Sea Creature 🐳Tap to unm"
+        },
+        {
+          "tag": "ytd-reel-player-overlay-renderer-cow",
+          "id": "",
+          "cls": [
+            "ytdReelPlayerOverlayRendererHost",
+            "ytdReelPlayerOverlayRendererExtractActionBar"
+          ],
+          "attrs": [],
+          "parent": "div",
+          "kids": [
+            "yt-reel-player-overlay-view-model"
+          ],
+          "text": "@GreenBroRantsSubscribeBaby Se"
+        }
+      ]
+    },
+    "block.css|.ytsb-blocked ytd-shorts reel-action-bar-view-model": {
+      "scenarios": {
+        "desktop-short": 1
+      },
+      "fps": [
+        {
+          "tag": "html",
+          "id": "",
+          "cls": [],
+          "attrs": [
+            "lang",
+            "darker-dark-theme",
+            "darker-dark-theme-deprecate",
+            "system-icons",
+            "color-version",
+            "typography",
+            "typography-spacing"
+          ],
+          "parent": "",
+          "kids": [
+            "head",
+            "body"
+          ],
+          "text": "body {transition: opacity ease"
+        },
+        {
+          "tag": "ytd-shorts",
+          "id": "",
+          "cls": [
+            "ytd-page-manager"
+          ],
+          "attrs": [
+            "enable-previous-continuation",
+            "enable-neon-buttons",
+            "move-ads-overlay-to-shorts",
+            "is-up-arrow-hidden",
+            "shorts-layout",
+            "role",
+            "mini-guide-visible"
+          ],
+          "parent": "ytd-page-manager",
+          "kids": [
+            "div"
+          ],
+          "text": "Baby Sea Creature 🐳Tap to unm"
+        },
+        {
+          "tag": "reel-action-bar-view-model",
+          "id": "",
+          "cls": [
+            "ytwReelActionBarViewModelHost",
+            "ytwReelActionBarViewModelHostDesktop"
+          ],
+          "attrs": [],
+          "parent": "div",
+          "kids": [
+            "like-button-view-model",
+            "button-view-model",
+            "pivot-button-view-model"
+          ],
+          "text": "19325ShareRemix"
+        }
+      ]
+    },
+    "block.css|.ytsb-blocked ytd-shorts #shorts-panel-container": {
+      "scenarios": {
+        "desktop-short": 1
+      },
+      "fps": [
+        {
+          "tag": "html",
+          "id": "",
+          "cls": [],
+          "attrs": [
+            "lang",
+            "darker-dark-theme",
+            "darker-dark-theme-deprecate",
+            "system-icons",
+            "color-version",
+            "typography",
+            "typography-spacing"
+          ],
+          "parent": "",
+          "kids": [
+            "head",
+            "body"
+          ],
+          "text": "body {transition: opacity ease"
+        },
+        {
+          "tag": "ytd-shorts",
+          "id": "",
+          "cls": [
+            "ytd-page-manager"
+          ],
+          "attrs": [
+            "enable-previous-continuation",
+            "enable-neon-buttons",
+            "move-ads-overlay-to-shorts",
+            "is-up-arrow-hidden",
+            "shorts-layout",
+            "role",
+            "mini-guide-visible"
+          ],
+          "parent": "ytd-page-manager",
+          "kids": [
+            "div"
+          ],
+          "text": "Baby Sea Creature 🐳Tap to unm"
+        },
+        {
+          "tag": "div",
+          "id": "shorts-panel-container",
+          "cls": [
+            "ytd-shorts"
+          ],
+          "attrs": [],
+          "parent": "ytd-shorts",
+          "kids": [
+            "div"
+          ],
+          "text": "Comments 25 Top Show featured "
+        }
+      ]
+    },
+    "block.css|.ytsb-blocked ytd-shorts ytd-engagement-panel-section-list-renderer": {
+      "scenarios": {
+        "desktop-short": 3
+      },
+      "fps": [
+        {
+          "tag": "html",
+          "id": "",
+          "cls": [],
+          "attrs": [
+            "lang",
+            "darker-dark-theme",
+            "darker-dark-theme-deprecate",
+            "system-icons",
+            "color-version",
+            "typography",
+            "typography-spacing"
+          ],
+          "parent": "",
+          "kids": [
+            "head",
+            "body"
+          ],
+          "text": "body {transition: opacity ease"
+        },
+        {
+          "tag": "ytd-shorts",
+          "id": "",
+          "cls": [
+            "ytd-page-manager"
+          ],
+          "attrs": [
+            "enable-previous-continuation",
+            "enable-neon-buttons",
+            "move-ads-overlay-to-shorts",
+            "is-up-arrow-hidden",
+            "shorts-layout",
+            "role",
+            "mini-guide-visible"
+          ],
+          "parent": "ytd-page-manager",
+          "kids": [
+            "div"
+          ],
+          "text": "Baby Sea Creature 🐳Tap to unm"
+        },
+        {
+          "tag": "ytd-engagement-panel-section-list-renderer",
+          "id": "",
+          "cls": [
+            "ytd-shorts"
+          ],
+          "attrs": [
+            "match-content-theme",
+            "visibility",
+            "is-watch-while-panel",
+            "shorts-panel",
+            "target-id"
+          ],
+          "parent": "div",
+          "kids": [
+            "div"
+          ],
+          "text": "Comments 25 Top Show featured "
+        }
+      ]
+    },
+    "block.css|.ytsb-blocked ytd-shorts .navigation-button": {
+      "scenarios": {
+        "desktop-short": 2
+      },
+      "fps": [
+        {
+          "tag": "html",
+          "id": "",
+          "cls": [],
+          "attrs": [
+            "lang",
+            "darker-dark-theme",
+            "darker-dark-theme-deprecate",
+            "system-icons",
+            "color-version",
+            "typography",
+            "typography-spacing"
+          ],
+          "parent": "",
+          "kids": [
+            "head",
+            "body"
+          ],
+          "text": "body {transition: opacity ease"
+        },
+        {
+          "tag": "ytd-shorts",
+          "id": "",
+          "cls": [
+            "ytd-page-manager"
+          ],
+          "attrs": [
+            "enable-previous-continuation",
+            "enable-neon-buttons",
+            "move-ads-overlay-to-shorts",
+            "is-up-arrow-hidden",
+            "shorts-layout",
+            "role",
+            "mini-guide-visible"
+          ],
+          "parent": "ytd-page-manager",
+          "kids": [
+            "div"
+          ],
+          "text": "Baby Sea Creature 🐳Tap to unm"
+        },
+        {
+          "tag": "div",
+          "id": "navigation-button-up",
+          "cls": [
+            "navigation-button",
+            "ytd-shorts"
+          ],
+          "attrs": [
+            "aria-hidden"
+          ],
+          "parent": "div",
+          "kids": [
+            "ytd-button-renderer"
+          ],
+          "text": ""
+        }
+      ]
+    },
+    "block.css|.ytsb-blocked ytd-shorts .reel-video-in-sequence-thumbnail": {
+      "scenarios": {
+        "desktop-short": 12
+      },
+      "fps": [
+        {
+          "tag": "html",
+          "id": "",
+          "cls": [],
+          "attrs": [
+            "lang",
+            "darker-dark-theme",
+            "darker-dark-theme-deprecate",
+            "system-icons",
+            "color-version",
+            "typography",
+            "typography-spacing"
+          ],
+          "parent": "",
+          "kids": [
+            "head",
+            "body"
+          ],
+          "text": "body {transition: opacity ease"
+        },
+        {
+          "tag": "ytd-shorts",
+          "id": "",
+          "cls": [
+            "ytd-page-manager"
+          ],
+          "attrs": [
+            "enable-previous-continuation",
+            "enable-neon-buttons",
+            "move-ads-overlay-to-shorts",
+            "is-up-arrow-hidden",
+            "shorts-layout",
+            "role",
+            "mini-guide-visible"
+          ],
+          "parent": "ytd-page-manager",
+          "kids": [
+            "div"
+          ],
+          "text": "Baby Sea Creature 🐳Tap to unm"
+        },
+        {
+          "tag": "div",
+          "id": "",
+          "cls": [
+            "reel-video-in-sequence-thumbnail",
+            "ytd-shorts"
+          ],
+          "attrs": [],
+          "parent": "div",
+          "kids": [],
+          "text": ""
+        }
+      ]
+    },
+    "block.css|.ytsb-blocked shorts-video > *": {
+      "scenarios": {
+        "mobile-short": 1
+      },
+      "fps": [
+        {
+          "tag": "html",
+          "id": "",
+          "cls": [],
+          "attrs": [
+            "darker-dark-theme",
+            "lang",
+            "page-shorts"
+          ],
+          "parent": "",
+          "kids": [
+            "head",
+            "body"
+          ],
+          "text": "window.WIZ_global_data = {\"AfY"
+        },
+        {
+          "tag": "shorts-video",
+          "id": "shorts-video",
+          "cls": [],
+          "attrs": [],
+          "parent": "div",
+          "kids": [
+            "div"
+          ],
+          "text": "Tap to unmuteSearch \"diy backy"
+        },
+        {
+          "tag": "div",
+          "id": "",
+          "cls": [
+            "video-wrapper"
+          ],
+          "attrs": [],
+          "parent": "shorts-video",
+          "kids": [
+            "div"
+          ],
+          "text": "Tap to unmuteSearch \"diy backy"
+        }
+      ]
+    },
+    "block.css|.ytsb-blocked #player-thumbnail-overlay": {
+      "scenarios": {
+        "mobile-short": 1
+      },
+      "fps": [
+        {
+          "tag": "html",
+          "id": "",
+          "cls": [],
+          "attrs": [
+            "darker-dark-theme",
+            "lang",
+            "page-shorts"
+          ],
+          "parent": "",
+          "kids": [
+            "head",
+            "body"
+          ],
+          "text": "window.WIZ_global_data = {\"AfY"
+        },
+        {
+          "tag": "img",
+          "id": "player-thumbnail-overlay",
+          "cls": [],
+          "attrs": [
+            "src",
+            "width",
+            "height",
+            "fetchpriority",
+            "alt"
+          ],
+          "parent": "div",
+          "kids": [],
+          "text": ""
+        }
+      ]
+    },
+    "block.css|.ytsb-blocked #player-endscreen-container": {
+      "scenarios": {
+        "mobile-short": 1
+      },
+      "fps": [
+        {
+          "tag": "html",
+          "id": "",
+          "cls": [],
+          "attrs": [
+            "darker-dark-theme",
+            "lang",
+            "page-shorts"
+          ],
+          "parent": "",
+          "kids": [
+            "head",
+            "body"
+          ],
+          "text": "window.WIZ_global_data = {\"AfY"
+        },
+        {
+          "tag": "div",
+          "id": "player-endscreen-container",
+          "cls": [],
+          "attrs": [
+            "hidden"
+          ],
+          "parent": "div",
+          "kids": [],
+          "text": ""
+        }
+      ]
+    },
+    "block.css|.ytsb-blocked ytm-app panel-container": {
+      "scenarios": {
+        "mobile-short": 1
+      },
+      "fps": [
+        {
+          "tag": "html",
+          "id": "",
+          "cls": [],
+          "attrs": [
+            "darker-dark-theme",
+            "lang",
+            "page-shorts"
+          ],
+          "parent": "",
+          "kids": [
+            "head",
+            "body"
+          ],
+          "text": "window.WIZ_global_data = {\"AfY"
+        },
+        {
+          "tag": "ytm-app",
+          "id": "app",
+          "cls": [
+            "sticky-player"
+          ],
+          "attrs": [
+            "__is_owner"
+          ],
+          "parent": "body",
+          "kids": [
+            "ytm-mobile-topbar-renderer",
+            "div",
+            "ytm-pages-dwell-detection",
+            "panel-container",
+            "bottom-sheet-container",
+            "snackbar-container",
+            "drawer-layout-container",
+            "yt-ephemeral-actions"
+          ],
+          "text": ""
+        },
+        {
+          "tag": "panel-container",
+          "id": "",
+          "cls": [],
+          "attrs": [],
+          "parent": "ytm-app",
+          "kids": [],
+          "text": ""
+        }
+      ]
+    },
+    "block.css|.ytsb-blocked ytm-app bottom-sheet-container": {
+      "scenarios": {
+        "mobile-short": 1
+      },
+      "fps": [
+        {
+          "tag": "html",
+          "id": "",
+          "cls": [],
+          "attrs": [
+            "darker-dark-theme",
+            "lang",
+            "page-shorts"
+          ],
+          "parent": "",
+          "kids": [
+            "head",
+            "body"
+          ],
+          "text": "window.WIZ_global_data = {\"AfY"
+        },
+        {
+          "tag": "ytm-app",
+          "id": "app",
+          "cls": [
+            "sticky-player"
+          ],
+          "attrs": [
+            "__is_owner"
+          ],
+          "parent": "body",
+          "kids": [
+            "ytm-mobile-topbar-renderer",
+            "div",
+            "ytm-pages-dwell-detection",
+            "panel-container",
+            "bottom-sheet-container",
+            "snackbar-container",
+            "drawer-layout-container",
+            "yt-ephemeral-actions"
+          ],
+          "text": ""
+        },
+        {
+          "tag": "bottom-sheet-container",
+          "id": "",
+          "cls": [],
+          "attrs": [
+            "role",
+            "aria-modal",
+            "hidden",
+            "aria-label"
+          ],
+          "parent": "ytm-app",
+          "kids": [],
+          "text": ""
+        }
+      ]
+    },
+    "block.css|.ytsb-blocked ytd-shorts #player-container": {
+      "scenarios": {
+        "desktop-short": 1
+      },
+      "fps": [
+        {
+          "tag": "html",
+          "id": "",
+          "cls": [],
+          "attrs": [
+            "lang",
+            "darker-dark-theme",
+            "darker-dark-theme-deprecate",
+            "system-icons",
+            "color-version",
+            "typography",
+            "typography-spacing"
+          ],
+          "parent": "",
+          "kids": [
+            "head",
+            "body"
+          ],
+          "text": "body {transition: opacity ease"
+        },
+        {
+          "tag": "ytd-shorts",
+          "id": "",
+          "cls": [
+            "ytd-page-manager"
+          ],
+          "attrs": [
+            "enable-previous-continuation",
+            "enable-neon-buttons",
+            "move-ads-overlay-to-shorts",
+            "is-up-arrow-hidden",
+            "shorts-layout",
+            "role",
+            "mini-guide-visible"
+          ],
+          "parent": "ytd-page-manager",
+          "kids": [
+            "div"
+          ],
+          "text": "Baby Sea Creature 🐳Tap to unm"
+        },
+        {
+          "tag": "div",
+          "id": "player-container",
+          "cls": [
+            "player-container",
+            "ytd-reel-video-renderer"
+          ],
+          "attrs": [],
+          "parent": "div",
+          "kids": [
+            "ytd-player",
+            "div",
+            "dom-if"
+          ],
+          "text": "Baby Sea Creature 🐳Tap to unm"
+        }
+      ]
+    },
+    "block.css|.ytsb-blocked shorts-video": {
+      "scenarios": {
+        "mobile-short": 1
+      },
+      "fps": [
+        {
+          "tag": "html",
+          "id": "",
+          "cls": [],
+          "attrs": [
+            "darker-dark-theme",
+            "lang",
+            "page-shorts"
+          ],
+          "parent": "",
+          "kids": [
+            "head",
+            "body"
+          ],
+          "text": "window.WIZ_global_data = {\"AfY"
+        },
+        {
+          "tag": "shorts-video",
+          "id": "shorts-video",
+          "cls": [],
+          "attrs": [],
+          "parent": "div",
+          "kids": [
+            "div"
+          ],
+          "text": "Tap to unmuteSearch \"diy backy"
+        }
+      ]
+    },
+    "block.css|.ytsb-blocked ytd-shorts #player-container::before": {
+      "scenarios": {
+        "desktop-short": 1
+      },
+      "fps": [
+        {
+          "tag": "html",
+          "id": "",
+          "cls": [],
+          "attrs": [
+            "lang",
+            "darker-dark-theme",
+            "darker-dark-theme-deprecate",
+            "system-icons",
+            "color-version",
+            "typography",
+            "typography-spacing"
+          ],
+          "parent": "",
+          "kids": [
+            "head",
+            "body"
+          ],
+          "text": "body {transition: opacity ease"
+        },
+        {
+          "tag": "ytd-shorts",
+          "id": "",
+          "cls": [
+            "ytd-page-manager"
+          ],
+          "attrs": [
+            "enable-previous-continuation",
+            "enable-neon-buttons",
+            "move-ads-overlay-to-shorts",
+            "is-up-arrow-hidden",
+            "shorts-layout",
+            "role",
+            "mini-guide-visible"
+          ],
+          "parent": "ytd-page-manager",
+          "kids": [
+            "div"
+          ],
+          "text": "Baby Sea Creature 🐳Tap to unm"
+        },
+        {
+          "tag": "div",
+          "id": "player-container",
+          "cls": [
+            "player-container",
+            "ytd-reel-video-renderer"
+          ],
+          "attrs": [],
+          "parent": "div",
+          "kids": [
+            "ytd-player",
+            "div",
+            "dom-if"
+          ],
+          "text": "Baby Sea Creature 🐳Tap to unm"
+        }
+      ]
+    },
+    "block.css|.ytsb-blocked shorts-video::before": {
+      "scenarios": {
+        "mobile-short": 1
+      },
+      "fps": [
+        {
+          "tag": "html",
+          "id": "",
+          "cls": [],
+          "attrs": [
+            "darker-dark-theme",
+            "lang",
+            "page-shorts"
+          ],
+          "parent": "",
+          "kids": [
+            "head",
+            "body"
+          ],
+          "text": "window.WIZ_global_data = {\"AfY"
+        },
+        {
+          "tag": "shorts-video",
+          "id": "shorts-video",
+          "cls": [],
+          "attrs": [],
+          "parent": "div",
+          "kids": [
+            "div"
+          ],
+          "text": "Tap to unmuteSearch \"diy backy"
+        }
+      ]
+    },
+    "block.css|.ytsb-blocked ytd-shorts #player-container::after": {
+      "scenarios": {
+        "desktop-short": 1
+      },
+      "fps": [
+        {
+          "tag": "html",
+          "id": "",
+          "cls": [],
+          "attrs": [
+            "lang",
+            "darker-dark-theme",
+            "darker-dark-theme-deprecate",
+            "system-icons",
+            "color-version",
+            "typography",
+            "typography-spacing"
+          ],
+          "parent": "",
+          "kids": [
+            "head",
+            "body"
+          ],
+          "text": "body {transition: opacity ease"
+        },
+        {
+          "tag": "ytd-shorts",
+          "id": "",
+          "cls": [
+            "ytd-page-manager"
+          ],
+          "attrs": [
+            "enable-previous-continuation",
+            "enable-neon-buttons",
+            "move-ads-overlay-to-shorts",
+            "is-up-arrow-hidden",
+            "shorts-layout",
+            "role",
+            "mini-guide-visible"
+          ],
+          "parent": "ytd-page-manager",
+          "kids": [
+            "div"
+          ],
+          "text": "Baby Sea Creature 🐳Tap to unm"
+        },
+        {
+          "tag": "div",
+          "id": "player-container",
+          "cls": [
+            "player-container",
+            "ytd-reel-video-renderer"
+          ],
+          "attrs": [],
+          "parent": "div",
+          "kids": [
+            "ytd-player",
+            "div",
+            "dom-if"
+          ],
+          "text": "Baby Sea Creature 🐳Tap to unm"
+        }
+      ]
+    },
+    "block.css|.ytsb-blocked shorts-video::after": {
+      "scenarios": {
+        "mobile-short": 1
+      },
+      "fps": [
+        {
+          "tag": "html",
+          "id": "",
+          "cls": [],
+          "attrs": [
+            "darker-dark-theme",
+            "lang",
+            "page-shorts"
+          ],
+          "parent": "",
+          "kids": [
+            "head",
+            "body"
+          ],
+          "text": "window.WIZ_global_data = {\"AfY"
+        },
+        {
+          "tag": "shorts-video",
+          "id": "shorts-video",
+          "cls": [],
+          "attrs": [],
+          "parent": "div",
+          "kids": [
+            "div"
+          ],
+          "text": "Tap to unmuteSearch \"diy backy"
+        }
+      ]
+    },
+    "block.css|.ytsb-hide-feeds ytd-search grid-shelf-view-model:has(ytm-shorts-lockup-view-model)": {
+      "scenarios": {
+        "desktop-search": 2
+      },
+      "fps": [
+        {
+          "tag": "html",
+          "id": "",
+          "cls": [],
+          "attrs": [
+            "lang",
+            "darker-dark-theme",
+            "darker-dark-theme-deprecate",
+            "system-icons",
+            "color-version",
+            "typography",
+            "typography-spacing"
+          ],
+          "parent": "",
+          "kids": [
+            "head",
+            "body"
+          ],
+          "text": "body {transition: opacity ease"
+        },
+        {
+          "tag": "ytd-search",
+          "id": "",
+          "cls": [
+            "ytd-page-manager"
+          ],
+          "attrs": [
+            "has-bigger-thumbs",
+            "reset-stacking-context",
+            "page-subtype",
+            "role",
+            "has-search-header",
+            "mini-guide-visible"
+          ],
+          "parent": "ytd-page-manager",
+          "kids": [
+            "div"
+          ],
+          "text": "All Shorts Unwatched Videos Re"
+        },
+        {
+          "tag": "grid-shelf-view-model",
+          "id": "",
+          "cls": [
+            "ytGridShelfViewModelHost",
+            "ytd-item-section-renderer",
+            "grid-shelf-with-top-margin"
+          ],
+          "attrs": [
+            "data-resize-observer-id"
+          ],
+          "parent": "div",
+          "kids": [
+            "yt-section-header-view-model",
+            "div"
+          ],
+          "text": "ShortsNewFINAL FEATURES FROM U"
+        }
+      ]
+    },
+    "block.css|.ytsb-hide-feeds ytm-search grid-shelf-view-model:has(ytm-shorts-lockup-view-model)": {
+      "scenarios": {
+        "mobile-search": 2
+      },
+      "fps": [
+        {
+          "tag": "html",
+          "id": "",
+          "cls": [],
+          "attrs": [
+            "darker-dark-theme",
+            "lang"
+          ],
+          "parent": "",
+          "kids": [
+            "head",
+            "body"
+          ],
+          "text": "window.WIZ_global_data = {\"AfY"
+        },
+        {
+          "tag": "ytm-search",
+          "id": "",
+          "cls": [
+            "ytmSearchPageHost",
+            "ytmSearchPageMaxWidthLimit"
+          ],
+          "attrs": [],
+          "parent": "div",
+          "kids": [
+            "ytm-section-list-renderer"
+          ],
+          "text": "AllChannelsPlaylistsAnytimeTod"
+        },
+        {
+          "tag": "grid-shelf-view-model",
+          "id": "",
+          "cls": [
+            "ytGridShelfViewModelHost",
+            "item"
+          ],
+          "attrs": [
+            "data-resize-observer-id"
+          ],
+          "parent": "lazy-list",
+          "kids": [
+            "div"
+          ],
+          "text": "FINAL FEATURES FROM UPCOMING G"
+        }
+      ]
+    },
+    "block.css|.ytsb-hide-feeds ytm-pivot-bar-item-renderer:has(> .pivot-shorts)": {
+      "scenarios": {
+        "mobile-search": 1,
+        "mobile-home": 1,
+        "mobile-channel": 1
+      },
+      "fps": [
+        {
+          "tag": "html",
+          "id": "",
+          "cls": [],
+          "attrs": [
+            "darker-dark-theme",
+            "lang"
+          ],
+          "parent": "",
+          "kids": [
+            "head",
+            "body"
+          ],
+          "text": "window.WIZ_global_data = {\"AfY"
+        },
+        {
+          "tag": "ytm-pivot-bar-item-renderer",
+          "id": "",
+          "cls": [],
+          "attrs": [],
+          "parent": "ytm-pivot-bar-renderer",
+          "kids": [
+            "div"
+          ],
+          "text": "Shorts"
+        }
+      ]
+    },
+    "block.css|.ytsb-hide-feeds yt-tab-shape[tab-title=\"Shorts\"]": {
+      "scenarios": {
+        "desktop-channel": 1,
+        "mobile-channel": 1
+      },
+      "fps": [
+        {
+          "tag": "html",
+          "id": "",
+          "cls": [],
+          "attrs": [
+            "lang",
+            "darker-dark-theme",
+            "darker-dark-theme-deprecate",
+            "system-icons",
+            "color-version",
+            "typography",
+            "typography-spacing"
+          ],
+          "parent": "",
+          "kids": [
+            "head",
+            "body"
+          ],
+          "text": "body {transition: opacity ease"
+        },
+        {
+          "tag": "yt-tab-shape",
+          "id": "",
+          "cls": [
+            "ytTabShapeHost",
+            "ytTabShapeHostClickable"
+          ],
+          "attrs": [
+            "role",
+            "tabindex",
+            "aria-selected",
+            "tab-title"
+          ],
+          "parent": "div",
+          "kids": [
+            "div"
+          ],
+          "text": "Shorts"
+        }
+      ]
+    },
+    "block.css|.ytsb-hide-feeds ytd-guide-entry-renderer > a#endpoint[title=\"Shorts\"]": {
+      "scenarios": {
+        "desktop-home": 1
+      },
+      "fps": [
+        {
+          "tag": "html",
+          "id": "",
+          "cls": [],
+          "attrs": [
+            "lang",
+            "darker-dark-theme",
+            "darker-dark-theme-deprecate",
+            "system-icons",
+            "color-version",
+            "typography",
+            "typography-spacing"
+          ],
+          "parent": "",
+          "kids": [
+            "head",
+            "body"
+          ],
+          "text": "body {transition: opacity ease"
+        },
+        {
+          "tag": "ytd-guide-entry-renderer",
+          "id": "",
+          "cls": [
+            "ytd-guide-section-renderer"
+          ],
+          "attrs": [
+            "active",
+            "is-primary",
+            "line-end-style"
+          ],
+          "parent": "div",
+          "kids": [
+            "a",
+            "yt-interaction"
+          ],
+          "text": "Home"
+        },
+        {
+          "tag": "a",
+          "id": "endpoint",
+          "cls": [
+            "yt-simple-endpoint",
+            "ytd-guide-entry-renderer"
+          ],
+          "attrs": [
+            "tabindex",
+            "role",
+            "title"
+          ],
+          "parent": "ytd-guide-entry-renderer",
+          "kids": [
+            "tp-yt-paper-item"
+          ],
+          "text": "Shorts"
+        }
+      ]
+    },
+    "block.css|.ytsb-hide-feeds ytd-mini-guide-entry-renderer > a[href=\"/shorts/\"]": {
+      "scenarios": {
+        "desktop-short": 1,
+        "desktop-search": 1,
+        "desktop-channel": 1
+      },
+      "fps": [
+        {
+          "tag": "html",
+          "id": "",
+          "cls": [],
+          "attrs": [
+            "lang",
+            "darker-dark-theme",
+            "darker-dark-theme-deprecate",
+            "system-icons",
+            "color-version",
+            "typography",
+            "typography-spacing"
+          ],
+          "parent": "",
+          "kids": [
+            "head",
+            "body"
+          ],
+          "text": "body {transition: opacity ease"
+        },
+        {
+          "tag": "ytd-mini-guide-entry-renderer",
+          "id": "",
+          "cls": [
+            "ytd-mini-guide-renderer"
+          ],
+          "attrs": [],
+          "parent": "div",
+          "kids": [
+            "a",
+            "span"
+          ],
+          "text": "Home Home"
+        },
+        {
+          "tag": "a",
+          "id": "endpoint",
+          "cls": [
+            "yt-simple-endpoint",
+            "ytd-mini-guide-entry-renderer"
+          ],
+          "attrs": [
+            "aria-current",
+            "aria-label",
+            "title",
+            "href"
+          ],
+          "parent": "ytd-mini-guide-entry-renderer",
+          "kids": [
+            "yt-icon",
+            "span",
+            "tp-yt-paper-tooltip",
+            "yt-interaction"
+          ],
+          "text": "Shorts Shorts"
+        }
+      ]
+    },
+    "content.js|ytd-shorts video": {
+      "scenarios": {
+        "desktop-short": 1
+      },
+      "fps": [
+        {
+          "tag": "ytd-shorts",
+          "id": "",
+          "cls": [
+            "ytd-page-manager"
+          ],
+          "attrs": [
+            "enable-previous-continuation",
+            "enable-neon-buttons",
+            "move-ads-overlay-to-shorts",
+            "is-up-arrow-hidden",
+            "shorts-layout",
+            "role",
+            "mini-guide-visible"
+          ],
+          "parent": "ytd-page-manager",
+          "kids": [
+            "div"
+          ],
+          "text": "Baby Sea Creature 🐳Tap to unm"
+        },
+        {
+          "tag": "video",
+          "id": "",
+          "cls": [
+            "video-stream",
+            "html5-main-video"
+          ],
+          "attrs": [
+            "tabindex",
+            "data-no-fullscreen",
+            "controlslist",
+            "src",
+            "loop"
+          ],
+          "parent": "div",
+          "kids": [],
+          "text": ""
+        }
+      ]
+    },
+    "content.js|shorts-video video": {
+      "scenarios": {
+        "mobile-short": 1
+      },
+      "fps": [
+        {
+          "tag": "shorts-video",
+          "id": "shorts-video",
+          "cls": [],
+          "attrs": [],
+          "parent": "div",
+          "kids": [
+            "div"
+          ],
+          "text": "Tap to unmuteSearch \"diy backy"
+        },
+        {
+          "tag": "video",
+          "id": "",
+          "cls": [
+            "video-stream",
+            "html5-main-video"
+          ],
+          "attrs": [
+            "tabindex",
+            "controlslist",
+            "loop"
+          ],
+          "parent": "div",
+          "kids": [],
+          "text": ""
+        }
+      ]
+    }
+  }
+}

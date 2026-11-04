@@ -17,6 +17,7 @@ It is a handful of small files with no background worker, no options page and no
 | `icons/` | Extension icons at 16, 32, 48 and 128 px, rendered from `icon.svg`. |
 | `store/` | Web Store listing screenshot (1280 x 800 PNG). |
 | `PRIVACY.md` | Privacy policy: nothing is collected, stored or transmitted. |
+| `maintain/` | Live-site test and repair harness (not part of the extension). See `maintain/README.md`. |
 
 ## How it works
 
@@ -59,7 +60,7 @@ Leave out any setting to keep its default. Chrome shows the values it has receiv
 
 For a quick trial, open `chrome://extensions`, turn on Developer mode, choose **Load unpacked** and select this folder.
 
-For a managed fleet, deploy it through Google Admin (Devices, Chrome, Apps and extensions, Users and browsers) as a force-installed extension. Google Admin needs either a Chrome Web Store listing or a self-hosted packed `.crx` with an update URL. Publishing to the Web Store needs the icons and screenshot in this repository plus a short privacy declaration; this extension collects nothing, so the declaration is simple. Students on managed devices cannot disable a force-installed extension.
+For a managed fleet, deploy it through Google Admin (Devices, Chrome, Apps and extensions, Users and browsers) as a force-installed extension. Google Admin needs either a Chrome Web Store listing or a self-hosted packed `.crx` with an update URL. Publishing to the Web Store needs the icons and screenshot in this repository plus a short privacy declaration (zip the extension files and `icons/` only, leaving out `maintain/`); this extension collects nothing, so the declaration is simple. Students on managed devices cannot disable a force-installed extension.
 
 ## Limitations
 
@@ -67,6 +68,10 @@ For a managed fleet, deploy it through Google Admin (Devices, Chrome, Apps and e
 - Shorts embedded on other sites are untouched. Shorts shelves are hidden only on the home page and in search results, not on channel or watch pages.
 - The channel Shorts tab and the full-width sidebar's Shorts entry are matched by their English labels, so a non-English interface still shows them. The narrow icon sidebar and the mobile bottom bar are matched in a language-neutral way. The Shorts filter chip on desktop search results has no hook other than its visible text, so it is left alone; opening a Short from it still hits the block screen or redirect.
 - YouTube changes its markup from time to time. The selectors in `block.css` were last checked against the live site on 3 November 2026. The Shorts shelf selectors are the most likely to break; if they do, shelves simply reappear. If a block-screen selector breaks, the video is still paused by `content.js`, but the block screen or an overlay element may need a selector update.
+
+## Keeping up with YouTube
+
+`node maintain/cli.mjs check` tests the extension against the live site in the latest stable Chrome, on desktop and mobile, and explains anything that broke: renamed elements with a verified replacement selector, newly visible elements with a safe selector to hide them, and changed navigation events or Shorts addresses. `fix auto` applies the verified fixes and re-tests, and `finish` bumps the version and commits once everything passes. Details are in `maintain/README.md`.
 
 ## Checking it works
 

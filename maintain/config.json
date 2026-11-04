@@ -1,0 +1,20 @@
+{
+  "searchQuery": "minecraft",
+  "channel": "@YouTube",
+  "readyTimeoutMs": 20000,
+  "settleMs": 2500,
+  "concurrency": 2,
+  "roots": {
+    "desktop": "ytd-shorts",
+    "mobile": "#player-container-id"
+  },
+  "ignoreInShorts": {
+    "desktop": "",
+    "mobile": ".ytShortsCarouselShortsA11yNav"
+  },
+  "allowedShortsLabels": "yt-chip-cloud-chip-renderer, ytm-chip-cloud-chip-renderer, chip-shape, yt-chip-cloud-renderer, ytm-chip-cloud-renderer, chip-bar-view-model",
+  "notes": {
+    "allowedShortsLabels": "The Shorts filter chip on search results is deliberately left visible (README, Limitations); it has no hook except its text.",
+    "roots": "Containers searched for visible leaks on a blocked Short. Everything visible inside, other than the block screen, counts as a leak."
+  }
+}

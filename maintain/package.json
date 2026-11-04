@@ -1,0 +1,13 @@
+{
+  "name": "shorts-block-maintain",
+  "private": true,
+  "type": "module",
+  "description": "Live-site test and selector maintenance harness for the Shorts Block extension.",
+  "scripts": {
+    "check": "node cli.mjs check"
+  },
+  "dependencies": {
+    "@puppeteer/browsers": "3.2.6",
+    "puppeteer": "25.16.0"
+  }
+}
