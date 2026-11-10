@@ -1,5 +1,5 @@
 {
-  "recorded": "2026-11-03T22:54:49.212Z",
+  "recorded": "2026-11-10T13:00:05.740Z",
   "version": "1.2.0",
   "selectors": {
     "block.css|.ytsb-blocked ytd-shorts #player-container > *": {
@@ -37,7 +37,6 @@
             "enable-previous-continuation",
             "enable-neon-buttons",
             "move-ads-overlay-to-shorts",
-            "is-up-arrow-hidden",
             "shorts-layout",
             "role",
             "mini-guide-visible"
@@ -46,7 +45,7 @@
           "kids": [
             "div"
           ],
-          "text": "Baby Sea Creature 🐳Tap to unm"
+          "text": "He actually lives here! 😲Tap "
         },
         {
           "tag": "div",
@@ -62,7 +61,7 @@
             "div",
             "dom-if"
           ],
-          "text": "Baby Sea Creature 🐳Tap to unm"
+          "text": "He actually lives here! 😲Tap "
         },
         {
           "tag": "ytd-player",
@@ -79,7 +78,7 @@
           "kids": [
             "div"
           ],
-          "text": "Baby Sea Creature 🐳Tap to unm"
+          "text": "He actually lives here! 😲Tap "
         }
       ]
     },
@@ -118,7 +117,6 @@
             "enable-previous-continuation",
             "enable-neon-buttons",
             "move-ads-overlay-to-shorts",
-            "is-up-arrow-hidden",
             "shorts-layout",
             "role",
             "mini-guide-visible"
@@ -127,7 +125,7 @@
           "kids": [
             "div"
           ],
-          "text": "Baby Sea Creature 🐳Tap to unm"
+          "text": "He actually lives here! 😲Tap "
         },
         {
           "tag": "div",
@@ -141,7 +139,7 @@
           "kids": [
             "div"
           ],
-          "text": "Baby Sea Creature 🐳Tap to unm"
+          "text": "He actually lives here! 😲Tap "
         },
         {
           "tag": "div",
@@ -192,7 +190,6 @@
             "enable-previous-continuation",
             "enable-neon-buttons",
             "move-ads-overlay-to-shorts",
-            "is-up-arrow-hidden",
             "shorts-layout",
             "role",
             "mini-guide-visible"
@@ -201,7 +198,7 @@
           "kids": [
             "div"
           ],
-          "text": "Baby Sea Creature 🐳Tap to unm"
+          "text": "He actually lives here! 😲Tap "
         },
         {
           "tag": "div",
@@ -215,7 +212,7 @@
           "kids": [
             "ytd-reel-player-overlay-renderer-cow"
           ],
-          "text": "@GreenBroRantsSubscribeBaby Se"
+          "text": "Search \"hidden rooms in houses"
         }
       ]
     },
@@ -254,7 +251,6 @@
             "enable-previous-continuation",
             "enable-neon-buttons",
             "move-ads-overlay-to-shorts",
-            "is-up-arrow-hidden",
             "shorts-layout",
             "role",
             "mini-guide-visible"
@@ -263,7 +259,7 @@
           "kids": [
             "div"
           ],
-          "text": "Baby Sea Creature 🐳Tap to unm"
+          "text": "He actually lives here! 😲Tap "
         },
         {
           "tag": "div",
@@ -313,7 +309,6 @@
             "enable-previous-continuation",
             "enable-neon-buttons",
             "move-ads-overlay-to-shorts",
-            "is-up-arrow-hidden",
             "shorts-layout",
             "role",
             "mini-guide-visible"
@@ -322,7 +317,7 @@
           "kids": [
             "div"
           ],
-          "text": "Baby Sea Creature 🐳Tap to unm"
+          "text": "He actually lives here! 😲Tap "
         },
         {
           "tag": "ytd-reel-player-overlay-renderer-cow",
@@ -336,7 +331,7 @@
           "kids": [
             "yt-reel-player-overlay-view-model"
           ],
-          "text": "@GreenBroRantsSubscribeBaby Se"
+          "text": "Search \"hidden rooms in houses"
         }
       ]
     },
@@ -375,7 +370,6 @@
             "enable-previous-continuation",
             "enable-neon-buttons",
             "move-ads-overlay-to-shorts",
-            "is-up-arrow-hidden",
             "shorts-layout",
             "role",
             "mini-guide-visible"
@@ -384,7 +378,7 @@
           "kids": [
             "div"
           ],
-          "text": "Baby Sea Creature 🐳Tap to unm"
+          "text": "He actually lives here! 😲Tap "
         },
         {
           "tag": "reel-action-bar-view-model",
@@ -400,7 +394,7 @@
             "button-view-model",
             "pivot-button-view-model"
           ],
-          "text": "19325ShareRemix"
+          "text": "2.2M26KShareRemix"
         }
       ]
     },
@@ -439,7 +433,6 @@
             "enable-previous-continuation",
             "enable-neon-buttons",
             "move-ads-overlay-to-shorts",
-            "is-up-arrow-hidden",
             "shorts-layout",
             "role",
             "mini-guide-visible"
@@ -448,7 +441,7 @@
           "kids": [
             "div"
           ],
-          "text": "Baby Sea Creature 🐳Tap to unm"
+          "text": "He actually lives here! 😲Tap "
         },
         {
           "tag": "div",
@@ -461,7 +454,7 @@
           "kids": [
             "div"
           ],
-          "text": "Comments 25 Top Show featured "
+          "text": "Comments 26K Top Show featured"
         }
       ]
     },
@@ -500,7 +493,6 @@
             "enable-previous-continuation",
             "enable-neon-buttons",
             "move-ads-overlay-to-shorts",
-            "is-up-arrow-hidden",
             "shorts-layout",
             "role",
             "mini-guide-visible"
@@ -509,7 +501,7 @@
           "kids": [
             "div"
           ],
-          "text": "Baby Sea Creature 🐳Tap to unm"
+          "text": "He actually lives here! 😲Tap "
         },
         {
           "tag": "ytd-engagement-panel-section-list-renderer",
@@ -528,7 +520,7 @@
           "kids": [
             "div"
           ],
-          "text": "Comments 25 Top Show featured "
+          "text": "Comments 26K Top Show featured"
         }
       ]
     },
@@ -567,7 +559,6 @@
             "enable-previous-continuation",
             "enable-neon-buttons",
             "move-ads-overlay-to-shorts",
-            "is-up-arrow-hidden",
             "shorts-layout",
             "role",
             "mini-guide-visible"
@@ -576,7 +567,7 @@
           "kids": [
             "div"
           ],
-          "text": "Baby Sea Creature 🐳Tap to unm"
+          "text": "He actually lives here! 😲Tap "
         },
         {
           "tag": "div",
@@ -585,20 +576,18 @@
             "navigation-button",
             "ytd-shorts"
           ],
-          "attrs": [
-            "aria-hidden"
-          ],
+          "attrs": [],
           "parent": "div",
           "kids": [
             "ytd-button-renderer"
           ],
-          "text": ""
+          "text": "Previous video"
         }
       ]
     },
     "block.css|.ytsb-blocked ytd-shorts .reel-video-in-sequence-thumbnail": {
       "scenarios": {
-        "desktop-short": 12
+        "desktop-short": 19
       },
       "fps": [
         {
@@ -631,7 +620,6 @@
             "enable-previous-continuation",
             "enable-neon-buttons",
             "move-ads-overlay-to-shorts",
-            "is-up-arrow-hidden",
             "shorts-layout",
             "role",
             "mini-guide-visible"
@@ -640,7 +628,7 @@
           "kids": [
             "div"
           ],
-          "text": "Baby Sea Creature 🐳Tap to unm"
+          "text": "He actually lives here! 😲Tap "
         },
         {
           "tag": "div",
@@ -686,7 +674,7 @@
           "kids": [
             "div"
           ],
-          "text": "Tap to unmuteSearch \"diy backy"
+          "text": "Tap to unmuteSearch \"turtle re"
         },
         {
           "tag": "div",
@@ -699,7 +687,7 @@
           "kids": [
             "div"
           ],
-          "text": "Tap to unmuteSearch \"diy backy"
+          "text": "Tap to unmuteSearch \"turtle re"
         }
       ]
     },
@@ -923,7 +911,6 @@
             "enable-previous-continuation",
             "enable-neon-buttons",
             "move-ads-overlay-to-shorts",
-            "is-up-arrow-hidden",
             "shorts-layout",
             "role",
             "mini-guide-visible"
@@ -932,7 +919,7 @@
           "kids": [
             "div"
           ],
-          "text": "Baby Sea Creature 🐳Tap to unm"
+          "text": "He actually lives here! 😲Tap "
         },
         {
           "tag": "div",
@@ -948,7 +935,7 @@
             "div",
             "dom-if"
           ],
-          "text": "Baby Sea Creature 🐳Tap to unm"
+          "text": "He actually lives here! 😲Tap "
         }
       ]
     },
@@ -982,7 +969,7 @@
           "kids": [
             "div"
           ],
-          "text": "Tap to unmuteSearch \"diy backy"
+          "text": "Tap to unmuteSearch \"turtle re"
         }
       ]
     },
@@ -1021,7 +1008,6 @@
             "enable-previous-continuation",
             "enable-neon-buttons",
             "move-ads-overlay-to-shorts",
-            "is-up-arrow-hidden",
             "shorts-layout",
             "role",
             "mini-guide-visible"
@@ -1030,7 +1016,7 @@
           "kids": [
             "div"
           ],
-          "text": "Baby Sea Creature 🐳Tap to unm"
+          "text": "He actually lives here! 😲Tap "
         },
         {
           "tag": "div",
@@ -1046,7 +1032,7 @@
             "div",
             "dom-if"
           ],
-          "text": "Baby Sea Creature 🐳Tap to unm"
+          "text": "He actually lives here! 😲Tap "
         }
       ]
     },
@@ -1080,7 +1066,7 @@
           "kids": [
             "div"
           ],
-          "text": "Tap to unmuteSearch \"diy backy"
+          "text": "Tap to unmuteSearch \"turtle re"
         }
       ]
     },
@@ -1119,7 +1105,6 @@
             "enable-previous-continuation",
             "enable-neon-buttons",
             "move-ads-overlay-to-shorts",
-            "is-up-arrow-hidden",
             "shorts-layout",
             "role",
             "mini-guide-visible"
@@ -1128,7 +1113,7 @@
           "kids": [
             "div"
           ],
-          "text": "Baby Sea Creature 🐳Tap to unm"
+          "text": "He actually lives here! 😲Tap "
         },
         {
           "tag": "div",
@@ -1144,7 +1129,7 @@
             "div",
             "dom-if"
           ],
-          "text": "Baby Sea Creature 🐳Tap to unm"
+          "text": "He actually lives here! 😲Tap "
         }
       ]
     },
@@ -1178,7 +1163,7 @@
           "kids": [
             "div"
           ],
-          "text": "Tap to unmuteSearch \"diy backy"
+          "text": "Tap to unmuteSearch \"turtle re"
         }
       ]
     },
@@ -1219,6 +1204,7 @@
             "page-subtype",
             "role",
             "has-search-header",
+            "has-secondary-content",
             "mini-guide-visible"
           ],
           "parent": "ytd-page-manager",
@@ -1243,13 +1229,13 @@
             "yt-section-header-view-model",
             "div"
           ],
-          "text": "ShortsNewFINAL FEATURES FROM U"
+          "text": "ShortsNewBuilding REALISTIC Ai"
         }
       ]
     },
     "block.css|.ytsb-hide-feeds ytm-search grid-shelf-view-model:has(ytm-shorts-lockup-view-model)": {
       "scenarios": {
-        "mobile-search": 2
+        "mobile-search": 3
       },
       "fps": [
         {
@@ -1271,8 +1257,7 @@
           "tag": "ytm-search",
           "id": "",
           "cls": [
-            "ytmSearchPageHost",
-            "ytmSearchPageMaxWidthLimit"
+            "ytmSearchPageHost"
           ],
           "attrs": [],
           "parent": "div",
@@ -1293,9 +1278,133 @@
           ],
           "parent": "lazy-list",
           "kids": [
+            "yt-section-header-view-model",
             "div"
           ],
-          "text": "FINAL FEATURES FROM UPCOMING G"
+          "text": "Latest from MinecraftYOU AND W"
+        }
+      ]
+    },
+    "block.css|.ytsb-hide-feeds.ytsb-home ytm-browse ytm-rich-section-renderer:has(ytm-shorts-lockup-view-model)": {
+      "scenarios": {
+        "mobile-home": 1
+      },
+      "fps": [
+        {
+          "tag": "html",
+          "id": "",
+          "cls": [],
+          "attrs": [
+            "darker-dark-theme",
+            "lang"
+          ],
+          "parent": "",
+          "kids": [
+            "head",
+            "body"
+          ],
+          "text": "window.WIZ_global_data = {\"AfY"
+        },
+        {
+          "tag": "ytm-browse",
+          "id": "",
+          "cls": [
+            "YtmBrowseHost"
+          ],
+          "attrs": [],
+          "parent": "div",
+          "kids": [
+            "ytm-single-column-browse-results-renderer"
+          ],
+          "text": "AllE-readersGamingPodcastsLive"
+        },
+        {
+          "tag": "ytm-rich-section-renderer",
+          "id": "",
+          "cls": [
+            "rich-section-single-column"
+          ],
+          "attrs": [],
+          "parent": "div",
+          "kids": [
+            "div"
+          ],
+          "text": "ShortsWife:is this marriage he"
+        }
+      ]
+    },
+    "block.css|.ytsb-hide-feeds ytd-reel-shelf-renderer": {
+      "scenarios": {
+        "desktop-channel": 1
+      },
+      "fps": [
+        {
+          "tag": "html",
+          "id": "",
+          "cls": [],
+          "attrs": [
+            "lang",
+            "darker-dark-theme",
+            "darker-dark-theme-deprecate",
+            "system-icons",
+            "color-version",
+            "typography",
+            "typography-spacing"
+          ],
+          "parent": "",
+          "kids": [
+            "head",
+            "body"
+          ],
+          "text": "body {transition: opacity ease"
+        },
+        {
+          "tag": "ytd-reel-shelf-renderer",
+          "id": "",
+          "cls": [
+            "ytd-item-section-renderer"
+          ],
+          "attrs": [],
+          "parent": "div",
+          "kids": [
+            "div"
+          ],
+          "text": "Shorts a party in CDMX with @D"
+        }
+      ]
+    },
+    "block.css|.ytsb-hide-feeds ytm-reel-shelf-renderer": {
+      "scenarios": {
+        "mobile-channel": 1
+      },
+      "fps": [
+        {
+          "tag": "html",
+          "id": "",
+          "cls": [],
+          "attrs": [
+            "darker-dark-theme",
+            "lang"
+          ],
+          "parent": "",
+          "kids": [
+            "head",
+            "body"
+          ],
+          "text": "window.WIZ_global_data = {\"AfY"
+        },
+        {
+          "tag": "ytm-reel-shelf-renderer",
+          "id": "",
+          "cls": [
+            "item"
+          ],
+          "attrs": [],
+          "parent": "lazy-list",
+          "kids": [
+            "div"
+          ],
+          "text": "Shortsa party in CDMX with @Da"
         }
       ]
     },
@@ -1524,7 +1633,6 @@
             "enable-previous-continuation",
             "enable-neon-buttons",
             "move-ads-overlay-to-shorts",
-            "is-up-arrow-hidden",
             "shorts-layout",
             "role",
             "mini-guide-visible"
@@ -1533,7 +1641,7 @@
           "kids": [
             "div"
           ],
-          "text": "Baby Sea Creature 🐳Tap to unm"
+          "text": "He actually lives here! 😲Tap "
         },
         {
           "tag": "video",
@@ -1569,7 +1677,7 @@
           "kids": [
             "div"
           ],
-          "text": "Tap to unmuteSearch \"diy backy"
+          "text": "Tap to unmuteSearch \"turtle re"
         },
         {
           "tag": "video",

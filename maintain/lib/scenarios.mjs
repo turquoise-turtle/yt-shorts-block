@@ -11,15 +11,18 @@ const M = 'https://m.youtube.com';
 export function scenarios(cfg) {
   const q = encodeURIComponent(cfg.searchQuery);
   const search = (h) => `${h}/results?search_query=${q}`;
+  const watch = (h) => `${h}/watch?v=${cfg.watchVideo}`;
   return [
     { name: 'desktop-short', variant: 'default', device: 'desktop', url: `${W}/shorts/`, kind: 'short' },
     { name: 'desktop-search', variant: 'default', device: 'desktop', url: search(W), kind: 'feed', spa: true },
     { name: 'desktop-home', variant: 'default', device: 'desktop', url: `${W}/`, kind: 'feed', widths: [1400, 1000] },
     { name: 'desktop-channel', variant: 'default', device: 'desktop', url: `${W}/${cfg.channel}`, kind: 'feed' },
+    { name: 'desktop-watch', variant: 'default', device: 'desktop', url: watch(W), kind: 'feed', widths: [1400, 900] },
     { name: 'mobile-short', variant: 'default', device: 'mobile', url: `${M}/shorts/`, kind: 'short' },
     { name: 'mobile-search', variant: 'default', device: 'mobile', url: search(M), kind: 'feed', spa: true },
     { name: 'mobile-home', variant: 'default', device: 'mobile', url: `${M}/`, kind: 'feed' },
     { name: 'mobile-channel', variant: 'default', device: 'mobile', url: `${M}/${cfg.channel}`, kind: 'feed' },
+    { name: 'mobile-watch', variant: 'default', device: 'mobile', url: watch(M), kind: 'feed' },
     { name: 'redirect-desktop-short', variant: 'redirect', device: 'desktop', url: `${W}/shorts/`, kind: 'redirect' },
     { name: 'redirect-desktop-search', variant: 'redirect', device: 'desktop', url: search(W), kind: 'redirect', spa: true },
     { name: 'redirect-mobile-short', variant: 'redirect', device: 'mobile', url: `${M}/shorts/`, kind: 'redirect' },

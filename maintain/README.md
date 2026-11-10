@@ -18,7 +18,7 @@ Run from the repository root.
 | --- | --- |
 | `node maintain/cli.mjs guide` | Prints the step-by-step procedure for agents. |
 | `node maintain/cli.mjs summary` | Reprints the last check's summary (also saved as `maintain/out/summary.txt`). |
-| `node maintain/cli.mjs check` | Runs all 14 scenarios (about 80 seconds), diagnoses failures, writes `maintain/out/report.md` and prints a short summary that ends with `NEXT:`. Exit code 0 is a pass (warnings allowed), 1 means problems were found, 2 is an environment or harness error. |
+| `node maintain/cli.mjs check` | Runs all 16 scenarios (about 90 seconds), diagnoses failures, writes `maintain/out/report.md` and prints a short summary that ends with `NEXT:`. Exit code 0 is a pass (warnings allowed), 1 means problems were found, 2 is an environment or harness error. |
 | `node maintain/cli.mjs fix auto` | Applies the fixes marked `[auto]`, then re-runs the check. `fix F1,F3` or `fix all` (auto and review) select others. |
 | `node maintain/cli.mjs try <scenario> '<selector>'` | Counts what a selector matches on a live page, and says if it would hide the block screen or ordinary videos. |
 | `node maintain/cli.mjs outline <scenario> [root]` | Writes a readable one-line-per-element outline of a page region to `maintain/out/`. |
@@ -30,7 +30,7 @@ Run from the repository root.
 
 ## What is checked
 
-Scenarios open desktop (`www`) and mobile (`m.`, Pixel 5 emulation) pages with a staged copy of the extension: a Short, search results with an in-app click into a Short and Back out, the home page at full and narrow sidebar widths, and a channel page. Policy variants run with a shim in front of `content.js` that stands in for managed policy (`redirect` on; `hide_shorts_in_feeds` off as a positive control for the leak detector).
+Scenarios open desktop (`www`) and mobile (`m.`, Pixel 5 emulation) pages with a staged copy of the extension: a Short, search results with an in-app click into a Short and Back out, the home page at full and narrow sidebar widths, a channel page, and a watch page (desktop at side-column and stacked widths). Policy variants run with a shim in front of `content.js` that stands in for managed policy (`redirect` on; `hide_shorts_in_feeds` off as a positive control for the leak detector).
 
 On each page the harness checks that the content script ran, that the Shorts URL pattern still matches, that the block screen is drawn, that video stays paused, that wheel, keys and swipes do not move to another Short, and that nothing is visible inside the blocked Short or as a Shorts shelf, tab or sidebar entry elsewhere. It also counts every selector in `block.css` and `content.js`.
 
@@ -57,4 +57,4 @@ Fixes are labelled `[auto]` (verified, high similarity), `[review]` (plausible) 
 | `selftest/` | Simulated YouTube changes for `selftest`. |
 | `out/` | Reports, screenshots and outlines. Git-ignored. |
 
-Limits: a fresh browser profile has an empty home feed, so the home-page shelf selectors are never exercised; the summary counts selectors that matched nothing anywhere. Real managed policy delivery is not tested, only the shim.
+Limits: a fresh browser profile has an empty home feed and gets no Shorts shelf in a watch page's related videos, so the home-page and reel shelf selectors are only exercised where YouTube shows them to signed-out viewers; the summary counts selectors that matched nothing anywhere. Real managed policy delivery is not tested, only the shim.

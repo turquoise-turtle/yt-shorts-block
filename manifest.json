@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Shorts Block",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Blocks YouTube Shorts with a block screen, hides comments and recommendations, and disables scrolling. Covers mobile YouTube too.",
   "icons": {
     "16": "icons/icon-16.png",
