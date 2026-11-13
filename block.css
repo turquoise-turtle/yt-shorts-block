@@ -71,7 +71,8 @@
   line-height: 1.4;
 }
 
-/* Shorts shelves on the home page and in search results, while
+/* Shorts shelves on the home page, and shelves and single Shorts in search
+   results, while
    <html class="ytsb-hide-feeds"> is set (the default). These selectors track
    YouTube's markup as of November 2026 and are the most likely to need
    updating. :has() is limited to shelf and result elements, of which a page
@@ -80,6 +81,7 @@
 .ytsb-hide-feeds ytd-search grid-shelf-view-model:has(ytm-shorts-lockup-view-model),
 .ytsb-hide-feeds ytd-search ytd-video-renderer:has(a#thumbnail[href^="/shorts/"]),
 .ytsb-hide-feeds ytm-search grid-shelf-view-model:has(ytm-shorts-lockup-view-model),
+.ytsb-hide-feeds ytm-search ytm-video-with-context-renderer:has(a[href^="/shorts/"]),
 .ytsb-hide-feeds.ytsb-home ytm-browse ytm-rich-section-renderer:has(ytm-shorts-lockup-view-model) {
   display: none !important;
 }
@@ -89,6 +91,12 @@
    signed-in viewers, in the related videos beside or below a watch-page video. */
 .ytsb-hide-feeds ytd-reel-shelf-renderer,
 .ytsb-hide-feeds ytm-reel-shelf-renderer {
+  display: none !important;
+}
+
+/* Channel home pages can mix Shorts into a playlist shelf beside ordinary
+   videos, so only the Shorts items are hidden, never the shelf. */
+.ytsb-hide-feeds ytd-shelf-renderer ytm-shorts-lockup-view-model-v2 {
   display: none !important;
 }
 

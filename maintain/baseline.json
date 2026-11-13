@@ -1,6 +1,6 @@
 {
-  "recorded": "2026-11-10T13:00:05.740Z",
-  "version": "1.2.0",
+  "recorded": "2026-11-13T13:56:43.059Z",
+  "version": "1.2.1",
   "selectors": {
     "block.css|.ytsb-blocked ytd-shorts #player-container > *": {
       "scenarios": {
@@ -37,6 +37,7 @@
             "enable-previous-continuation",
             "enable-neon-buttons",
             "move-ads-overlay-to-shorts",
+            "is-up-arrow-hidden",
             "shorts-layout",
             "role",
             "mini-guide-visible"
@@ -45,7 +46,7 @@
           "kids": [
             "div"
           ],
-          "text": "He actually lives here! 😲Tap "
+          "text": "This box is perfect for this C"
         },
         {
           "tag": "div",
@@ -61,7 +62,7 @@
             "div",
             "dom-if"
           ],
-          "text": "He actually lives here! 😲Tap "
+          "text": "This box is perfect for this C"
         },
         {
           "tag": "ytd-player",
@@ -78,7 +79,7 @@
           "kids": [
             "div"
           ],
-          "text": "He actually lives here! 😲Tap "
+          "text": "This box is perfect for this C"
         }
       ]
     },
@@ -117,6 +118,7 @@
             "enable-previous-continuation",
             "enable-neon-buttons",
             "move-ads-overlay-to-shorts",
+            "is-up-arrow-hidden",
             "shorts-layout",
             "role",
             "mini-guide-visible"
@@ -125,7 +127,7 @@
           "kids": [
             "div"
           ],
-          "text": "He actually lives here! 😲Tap "
+          "text": "This box is perfect for this C"
         },
         {
           "tag": "div",
@@ -139,7 +141,7 @@
           "kids": [
             "div"
           ],
-          "text": "He actually lives here! 😲Tap "
+          "text": "This box is perfect for this C"
         },
         {
           "tag": "div",
@@ -190,6 +192,7 @@
             "enable-previous-continuation",
             "enable-neon-buttons",
             "move-ads-overlay-to-shorts",
+            "is-up-arrow-hidden",
             "shorts-layout",
             "role",
             "mini-guide-visible"
@@ -198,7 +201,7 @@
           "kids": [
             "div"
           ],
-          "text": "He actually lives here! 😲Tap "
+          "text": "This box is perfect for this C"
         },
         {
           "tag": "div",
@@ -212,7 +215,7 @@
           "kids": [
             "ytd-reel-player-overlay-renderer-cow"
           ],
-          "text": "Search \"hidden rooms in houses"
+          "text": "Search \"hide christmas tree ba"
         }
       ]
     },
@@ -251,6 +254,7 @@
             "enable-previous-continuation",
             "enable-neon-buttons",
             "move-ads-overlay-to-shorts",
+            "is-up-arrow-hidden",
             "shorts-layout",
             "role",
             "mini-guide-visible"
@@ -259,7 +263,7 @@
           "kids": [
             "div"
           ],
-          "text": "He actually lives here! 😲Tap "
+          "text": "This box is perfect for this C"
         },
         {
           "tag": "div",
@@ -309,6 +313,7 @@
             "enable-previous-continuation",
             "enable-neon-buttons",
             "move-ads-overlay-to-shorts",
+            "is-up-arrow-hidden",
             "shorts-layout",
             "role",
             "mini-guide-visible"
@@ -317,7 +322,7 @@
           "kids": [
             "div"
           ],
-          "text": "He actually lives here! 😲Tap "
+          "text": "This box is perfect for this C"
         },
         {
           "tag": "ytd-reel-player-overlay-renderer-cow",
@@ -331,7 +336,7 @@
           "kids": [
             "yt-reel-player-overlay-view-model"
           ],
-          "text": "Search \"hidden rooms in houses"
+          "text": "Search \"hide christmas tree ba"
         }
       ]
     },
@@ -370,6 +375,7 @@
             "enable-previous-continuation",
             "enable-neon-buttons",
             "move-ads-overlay-to-shorts",
+            "is-up-arrow-hidden",
             "shorts-layout",
             "role",
             "mini-guide-visible"
@@ -378,7 +384,7 @@
           "kids": [
             "div"
           ],
-          "text": "He actually lives here! 😲Tap "
+          "text": "This box is perfect for this C"
         },
         {
           "tag": "reel-action-bar-view-model",
@@ -394,7 +400,7 @@
             "button-view-model",
             "pivot-button-view-model"
           ],
-          "text": "2.2M26KShareRemix"
+          "text": "28K367ShareRemix"
         }
       ]
     },
@@ -433,6 +439,7 @@
             "enable-previous-continuation",
             "enable-neon-buttons",
             "move-ads-overlay-to-shorts",
+            "is-up-arrow-hidden",
             "shorts-layout",
             "role",
             "mini-guide-visible"
@@ -441,7 +448,7 @@
           "kids": [
             "div"
           ],
-          "text": "He actually lives here! 😲Tap "
+          "text": "This box is perfect for this C"
         },
         {
           "tag": "div",
@@ -454,7 +461,7 @@
           "kids": [
             "div"
           ],
-          "text": "Comments 26K Top Show featured"
+          "text": "Comments 367 Top Show featured"
         }
       ]
     },
@@ -493,6 +500,7 @@
             "enable-previous-continuation",
             "enable-neon-buttons",
             "move-ads-overlay-to-shorts",
+            "is-up-arrow-hidden",
             "shorts-layout",
             "role",
             "mini-guide-visible"
@@ -501,7 +509,7 @@
           "kids": [
             "div"
           ],
-          "text": "He actually lives here! 😲Tap "
+          "text": "This box is perfect for this C"
         },
         {
           "tag": "ytd-engagement-panel-section-list-renderer",
@@ -520,7 +528,7 @@
           "kids": [
             "div"
           ],
-          "text": "Comments 26K Top Show featured"
+          "text": "Comments 367 Top Show featured"
         }
       ]
     },
@@ -559,6 +567,7 @@
             "enable-previous-continuation",
             "enable-neon-buttons",
             "move-ads-overlay-to-shorts",
+            "is-up-arrow-hidden",
             "shorts-layout",
             "role",
             "mini-guide-visible"
@@ -567,7 +576,7 @@
           "kids": [
             "div"
           ],
-          "text": "He actually lives here! 😲Tap "
+          "text": "This box is perfect for this C"
         },
         {
           "tag": "div",
@@ -576,18 +585,20 @@
             "navigation-button",
             "ytd-shorts"
           ],
-          "attrs": [],
+          "attrs": [
+            "aria-hidden"
+          ],
           "parent": "div",
           "kids": [
             "ytd-button-renderer"
           ],
-          "text": "Previous video"
+          "text": ""
         }
       ]
     },
     "block.css|.ytsb-blocked ytd-shorts .reel-video-in-sequence-thumbnail": {
       "scenarios": {
-        "desktop-short": 19
+        "desktop-short": 11
       },
       "fps": [
         {
@@ -620,6 +631,7 @@
             "enable-previous-continuation",
             "enable-neon-buttons",
             "move-ads-overlay-to-shorts",
+            "is-up-arrow-hidden",
             "shorts-layout",
             "role",
             "mini-guide-visible"
@@ -628,7 +640,7 @@
           "kids": [
             "div"
           ],
-          "text": "He actually lives here! 😲Tap "
+          "text": "This box is perfect for this C"
         },
         {
           "tag": "div",
@@ -674,7 +686,7 @@
           "kids": [
             "div"
           ],
-          "text": "Tap to unmuteSearch \"turtle re"
+          "text": "Tap to unmuteLike I just met a"
         },
         {
           "tag": "div",
@@ -687,7 +699,7 @@
           "kids": [
             "div"
           ],
-          "text": "Tap to unmuteSearch \"turtle re"
+          "text": "Tap to unmuteLike I just met a"
         }
       ]
     },
@@ -911,6 +923,7 @@
             "enable-previous-continuation",
             "enable-neon-buttons",
             "move-ads-overlay-to-shorts",
+            "is-up-arrow-hidden",
             "shorts-layout",
             "role",
             "mini-guide-visible"
@@ -919,7 +932,7 @@
           "kids": [
             "div"
           ],
-          "text": "He actually lives here! 😲Tap "
+          "text": "This box is perfect for this C"
         },
         {
           "tag": "div",
@@ -935,7 +948,7 @@
             "div",
             "dom-if"
           ],
-          "text": "He actually lives here! 😲Tap "
+          "text": "This box is perfect for this C"
         }
       ]
     },
@@ -969,7 +982,7 @@
           "kids": [
             "div"
           ],
-          "text": "Tap to unmuteSearch \"turtle re"
+          "text": "Tap to unmuteLike I just met a"
         }
       ]
     },
@@ -1008,6 +1021,7 @@
             "enable-previous-continuation",
             "enable-neon-buttons",
             "move-ads-overlay-to-shorts",
+            "is-up-arrow-hidden",
             "shorts-layout",
             "role",
             "mini-guide-visible"
@@ -1016,7 +1030,7 @@
           "kids": [
             "div"
           ],
-          "text": "He actually lives here! 😲Tap "
+          "text": "This box is perfect for this C"
         },
         {
           "tag": "div",
@@ -1032,7 +1046,7 @@
             "div",
             "dom-if"
           ],
-          "text": "He actually lives here! 😲Tap "
+          "text": "This box is perfect for this C"
         }
       ]
     },
@@ -1066,7 +1080,7 @@
           "kids": [
             "div"
           ],
-          "text": "Tap to unmuteSearch \"turtle re"
+          "text": "Tap to unmuteLike I just met a"
         }
       ]
     },
@@ -1105,6 +1119,7 @@
             "enable-previous-continuation",
             "enable-neon-buttons",
             "move-ads-overlay-to-shorts",
+            "is-up-arrow-hidden",
             "shorts-layout",
             "role",
             "mini-guide-visible"
@@ -1113,7 +1128,7 @@
           "kids": [
             "div"
           ],
-          "text": "He actually lives here! 😲Tap "
+          "text": "This box is perfect for this C"
         },
         {
           "tag": "div",
@@ -1129,7 +1144,7 @@
             "div",
             "dom-if"
           ],
-          "text": "He actually lives here! 😲Tap "
+          "text": "This box is perfect for this C"
         }
       ]
     },
@@ -1163,7 +1178,7 @@
           "kids": [
             "div"
           ],
-          "text": "Tap to unmuteSearch \"turtle re"
+          "text": "Tap to unmuteLike I just met a"
         }
       ]
     },
@@ -1229,13 +1244,13 @@
             "yt-section-header-view-model",
             "div"
           ],
-          "text": "ShortsNewBuilding REALISTIC Ai"
+          "text": "ShortsNewWHAT IF MINECRAFT LIV"
         }
       ]
     },
     "block.css|.ytsb-hide-feeds ytm-search grid-shelf-view-model:has(ytm-shorts-lockup-view-model)": {
       "scenarios": {
-        "mobile-search": 3
+        "mobile-search": 2
       },
       "fps": [
         {
@@ -1278,16 +1293,15 @@
           ],
           "parent": "lazy-list",
           "kids": [
-            "yt-section-header-view-model",
             "div"
           ],
-          "text": "Latest from MinecraftYOU AND W"
+          "text": "Best Minecraft Christmas 🎄🎁5"
         }
       ]
     },
-    "block.css|.ytsb-hide-feeds.ytsb-home ytm-browse ytm-rich-section-renderer:has(ytm-shorts-lockup-view-model)": {
+    "block.css|.ytsb-hide-feeds ytm-search ytm-video-with-context-renderer:has(a[href^=\"/shorts/\"])": {
       "scenarios": {
-        "mobile-home": 1
+        "mobile-search": 7
       },
       "fps": [
         {
@@ -1306,30 +1320,31 @@
           "text": "window.WIZ_global_data = {\"AfY"
         },
         {
-          "tag": "ytm-browse",
+          "tag": "ytm-search",
           "id": "",
           "cls": [
-            "YtmBrowseHost"
+            "ytmSearchPageHost"
           ],
           "attrs": [],
           "parent": "div",
           "kids": [
-            "ytm-single-column-browse-results-renderer"
+            "ytm-section-list-renderer"
           ],
-          "text": "AllE-readersGamingPodcastsLive"
+          "text": "AllChannelsPlaylistsAnytimeTod"
         },
         {
-          "tag": "ytm-rich-section-renderer",
+          "tag": "ytm-video-with-context-renderer",
           "id": "",
           "cls": [
-            "rich-section-single-column"
+            "item",
+            "adaptive-feed-item"
           ],
           "attrs": [],
-          "parent": "div",
+          "parent": "lazy-list",
           "kids": [
-            "div"
+            "ytm-media-item"
           ],
-          "text": "ShortsWife:is this marriage he"
+          "text": "Can You Find Milo and Chip in "
         }
       ]
     },
@@ -1369,7 +1384,7 @@
           "kids": [
             "div"
           ],
-          "text": "Shorts a party in CDMX with @D"
+          "text": "Shorts one for each day of the"
         }
       ]
     },
@@ -1404,7 +1419,7 @@
           "kids": [
             "div"
           ],
-          "text": "Shortsa party in CDMX with @Da"
+          "text": "Shortsone for each day of the "
         }
       ]
     },
@@ -1618,31 +1633,20 @@
         }
       ]
     },
-    "content.js|ytd-shorts video": {
+    "content.js|video": {
       "scenarios": {
-        "desktop-short": 1
+        "desktop-short": 2,
+        "desktop-search": 1,
+        "desktop-home": 1,
+        "desktop-channel": 2,
+        "desktop-watch": 1,
+        "mobile-short": 1,
+        "mobile-search": 1,
+        "mobile-home": 1,
+        "mobile-channel": 1,
+        "mobile-watch": 1
       },
       "fps": [
-        {
-          "tag": "ytd-shorts",
-          "id": "",
-          "cls": [
-            "ytd-page-manager"
-          ],
-          "attrs": [
-            "enable-previous-continuation",
-            "enable-neon-buttons",
-            "move-ads-overlay-to-shorts",
-            "shorts-layout",
-            "role",
-            "mini-guide-visible"
-          ],
-          "parent": "ytd-page-manager",
-          "kids": [
-            "div"
-          ],
-          "text": "He actually lives here! 😲Tap "
-        },
         {
           "tag": "video",
           "id": "",
@@ -1655,40 +1659,6 @@
             "data-no-fullscreen",
             "controlslist",
             "src",
-            "loop"
-          ],
-          "parent": "div",
-          "kids": [],
-          "text": ""
-        }
-      ]
-    },
-    "content.js|shorts-video video": {
-      "scenarios": {
-        "mobile-short": 1
-      },
-      "fps": [
-        {
-          "tag": "shorts-video",
-          "id": "shorts-video",
-          "cls": [],
-          "attrs": [],
-          "parent": "div",
-          "kids": [
-            "div"
-          ],
-          "text": "Tap to unmuteSearch \"turtle re"
-        },
-        {
-          "tag": "video",
-          "id": "",
-          "cls": [
-            "video-stream",
-            "html5-main-video"
-          ],
-          "attrs": [
-            "tabindex",
-            "controlslist",
             "loop"
           ],
           "parent": "div",

@@ -187,7 +187,7 @@ async function runShort(s, page, check, res, { inv, cfg }, html) {
     media.length === 0
       ? 'No <video> found on the Short page; cannot tell whether pausing works.'
       : playing.length
-        ? `Video still playing at: ${playing.map((m) => m.where).join(' | ')}. content.js pauses "ytd-shorts video, shorts-video video" and any media that fires play while blocked.`
+        ? `Video still playing at: ${playing.map((m) => m.where).join(' | ')}. content.js pauses every <video> when the block starts and any media that fires play while blocked.`
         : `${media.length} media element(s), all paused`
   );
 

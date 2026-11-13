@@ -10,6 +10,9 @@
   const HOME_CLASS = 'ytsb-home';
   const root = document.documentElement;
   let blocked = false;
+  // True from the start of a navigation away from a Short until the next page
+  // is ready; see the yt-navigate-start listener.
+  let leaving = false;
 
   const DEFAULT_REDIRECT_URL = 'https://youtube.com';
   let settings = { redirect: false, redirectUrl: DEFAULT_REDIRECT_URL, hideFeeds: true };
@@ -51,9 +54,10 @@
     window.removeEventListener('keydown', onKeydown, true);
   };
 
-  const pauseShorts = () => {
-    const videos = document.querySelectorAll('ytd-shorts video, shorts-video video');
-    for (const v of videos) v.pause();
+  // Every video, not only the Shorts player's: nothing else should keep
+  // playing on a blocked page, and this way no container name can go stale.
+  const pauseVideos = () => {
+    for (const v of document.querySelectorAll('video')) v.pause();
   };
 
   // Replace the history entry when it is the Short itself, so Back does not
@@ -71,7 +75,7 @@
     root.classList.toggle(BLOCKED_CLASS, on);
     if (on) {
       attachInputBlockers();
-      pauseShorts();
+      pauseVideos();
       maybeRedirect();
     } else {
       detachInputBlockers();
@@ -116,7 +120,10 @@
   document.addEventListener(
     'play',
     (e) => {
-      if (blocked && e.target instanceof HTMLMediaElement) e.target.pause();
+      if (!blocked || !(e.target instanceof HTMLMediaElement)) return;
+      // The next page's own player may start before the block lifts.
+      if (leaving && !e.target.closest('ytd-shorts')) return;
+      e.target.pause();
     },
     true
   );
@@ -126,16 +133,26 @@
   // The home class only scopes the mobile feed rules: unlike the desktop app,
   // the mobile app marks nothing in the page as being the home page.
   const syncWithLocation = () => {
+    leaving = false;
     root.classList.toggle(HOME_CLASS, location.pathname === '/');
     setBlocked(isShortsPath());
   };
 
-  // www.youtube.com: "start" fires before the URL updates, hence reading
-  // pageType from the event rather than the location; its detail is small,
-  // unlike the finish event's, which is never read.
+  // www.youtube.com: a Short starts playing up to a second before "finish",
+  // so "start" turns the block on. It never turns it off: YouTube keeps the
+  // Short on screen until the next page has loaded, a second or two later, so
+  // unblocking waits for "finish". pageType is read from the event because the
+  // URL may not have changed yet; the start event's detail is small, unlike
+  // the finish event's, which is never read.
   document.addEventListener('yt-navigate-start', (e) => {
     const pageType = e.detail && e.detail.pageType;
-    if (pageType) setBlocked(pageType === 'shorts');
+    if (!pageType) return;
+    if (pageType === 'shorts') {
+      leaving = false;
+      setBlocked(true);
+    } else {
+      leaving = blocked;
+    }
   });
   document.addEventListener('yt-navigate-finish', syncWithLocation);
 
