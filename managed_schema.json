@@ -13,7 +13,7 @@
     },
     "hide_shorts_in_feeds": {
       "title": "Hide Shorts shelves and tabs",
-      "description": "Hide Shorts shelves on the home page, in search results and in a watch page's related videos, the Shorts entry in the desktop sidebar, the Shorts tab in the mobile bottom bar, and the Shorts tab on channel pages. Defaults to true.",
+      "description": "Hide Shorts shelves on feeds, in search results and in a watch page's related videos, Shorts listed among ordinary videos, Shorts-only pages such as a channel's Shorts tab, the Shorts entry in the desktop sidebar, the Shorts tab in the mobile bottom bar, and the Shorts tab on channel pages. Defaults to true.",
       "type": "boolean"
     }
   }

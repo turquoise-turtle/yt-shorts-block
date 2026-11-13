@@ -1,6 +1,6 @@
 {
-  "recorded": "2026-11-13T13:56:43.059Z",
-  "version": "1.2.1",
+  "recorded": "2026-11-13T15:19:49.818Z",
+  "version": "1.2.2",
   "selectors": {
     "block.css|.ytsb-blocked ytd-shorts #player-container > *": {
       "scenarios": {
@@ -46,7 +46,7 @@
           "kids": [
             "div"
           ],
-          "text": "This box is perfect for this C"
+          "text": "Only REAL places here!😁Tap to"
         },
         {
           "tag": "div",
@@ -62,7 +62,7 @@
             "div",
             "dom-if"
           ],
-          "text": "This box is perfect for this C"
+          "text": "Only REAL places here!😁Tap to"
         },
         {
           "tag": "ytd-player",
@@ -79,7 +79,7 @@
           "kids": [
             "div"
           ],
-          "text": "This box is perfect for this C"
+          "text": "Only REAL places here!😁Tap to"
         }
       ]
     },
@@ -127,7 +127,7 @@
           "kids": [
             "div"
           ],
-          "text": "This box is perfect for this C"
+          "text": "Only REAL places here!😁Tap to"
         },
         {
           "tag": "div",
@@ -141,7 +141,7 @@
           "kids": [
             "div"
           ],
-          "text": "This box is perfect for this C"
+          "text": "Only REAL places here!😁Tap to"
         },
         {
           "tag": "div",
@@ -201,7 +201,7 @@
           "kids": [
             "div"
           ],
-          "text": "This box is perfect for this C"
+          "text": "Only REAL places here!😁Tap to"
         },
         {
           "tag": "div",
@@ -215,7 +215,7 @@
           "kids": [
             "ytd-reel-player-overlay-renderer-cow"
           ],
-          "text": "Search \"hide christmas tree ba"
+          "text": "@travelihSubscribeOnly REAL pl"
         }
       ]
     },
@@ -263,7 +263,7 @@
           "kids": [
             "div"
           ],
-          "text": "This box is perfect for this C"
+          "text": "Only REAL places here!😁Tap to"
         },
         {
           "tag": "div",
@@ -322,7 +322,7 @@
           "kids": [
             "div"
           ],
-          "text": "This box is perfect for this C"
+          "text": "Only REAL places here!😁Tap to"
         },
         {
           "tag": "ytd-reel-player-overlay-renderer-cow",
@@ -336,7 +336,7 @@
           "kids": [
             "yt-reel-player-overlay-view-model"
           ],
-          "text": "Search \"hide christmas tree ba"
+          "text": "@travelihSubscribeOnly REAL pl"
         }
       ]
     },
@@ -384,7 +384,7 @@
           "kids": [
             "div"
           ],
-          "text": "This box is perfect for this C"
+          "text": "Only REAL places here!😁Tap to"
         },
         {
           "tag": "reel-action-bar-view-model",
@@ -398,9 +398,10 @@
           "kids": [
             "like-button-view-model",
             "button-view-model",
+            "toggle-button-view-model",
             "pivot-button-view-model"
           ],
-          "text": "28K367ShareRemix"
+          "text": "249K3,137SaveShareRemix"
         }
       ]
     },
@@ -448,7 +449,7 @@
           "kids": [
             "div"
           ],
-          "text": "This box is perfect for this C"
+          "text": "Only REAL places here!😁Tap to"
         },
         {
           "tag": "div",
@@ -461,7 +462,7 @@
           "kids": [
             "div"
           ],
-          "text": "Comments 367 Top Show featured"
+          "text": "Comments 3.1K Top Show feature"
         }
       ]
     },
@@ -509,7 +510,7 @@
           "kids": [
             "div"
           ],
-          "text": "This box is perfect for this C"
+          "text": "Only REAL places here!😁Tap to"
         },
         {
           "tag": "ytd-engagement-panel-section-list-renderer",
@@ -528,7 +529,7 @@
           "kids": [
             "div"
           ],
-          "text": "Comments 367 Top Show featured"
+          "text": "Comments 3.1K Top Show feature"
         }
       ]
     },
@@ -576,7 +577,7 @@
           "kids": [
             "div"
           ],
-          "text": "This box is perfect for this C"
+          "text": "Only REAL places here!😁Tap to"
         },
         {
           "tag": "div",
@@ -598,7 +599,7 @@
     },
     "block.css|.ytsb-blocked ytd-shorts .reel-video-in-sequence-thumbnail": {
       "scenarios": {
-        "desktop-short": 11
+        "desktop-short": 18
       },
       "fps": [
         {
@@ -640,7 +641,7 @@
           "kids": [
             "div"
           ],
-          "text": "This box is perfect for this C"
+          "text": "Only REAL places here!😁Tap to"
         },
         {
           "tag": "div",
@@ -686,7 +687,7 @@
           "kids": [
             "div"
           ],
-          "text": "Tap to unmuteLike I just met a"
+          "text": "Tap to unmute@ReLikeVibesSubsc"
         },
         {
           "tag": "div",
@@ -699,7 +700,7 @@
           "kids": [
             "div"
           ],
-          "text": "Tap to unmuteLike I just met a"
+          "text": "Tap to unmute@ReLikeVibesSubsc"
         }
       ]
     },
@@ -932,7 +933,7 @@
           "kids": [
             "div"
           ],
-          "text": "This box is perfect for this C"
+          "text": "Only REAL places here!😁Tap to"
         },
         {
           "tag": "div",
@@ -948,7 +949,7 @@
             "div",
             "dom-if"
           ],
-          "text": "This box is perfect for this C"
+          "text": "Only REAL places here!😁Tap to"
         }
       ]
     },
@@ -982,7 +983,7 @@
           "kids": [
             "div"
           ],
-          "text": "Tap to unmuteLike I just met a"
+          "text": "Tap to unmute@ReLikeVibesSubsc"
         }
       ]
     },
@@ -1030,7 +1031,7 @@
           "kids": [
             "div"
           ],
-          "text": "This box is perfect for this C"
+          "text": "Only REAL places here!😁Tap to"
         },
         {
           "tag": "div",
@@ -1046,7 +1047,7 @@
             "div",
             "dom-if"
           ],
-          "text": "This box is perfect for this C"
+          "text": "Only REAL places here!😁Tap to"
         }
       ]
     },
@@ -1080,7 +1081,7 @@
           "kids": [
             "div"
           ],
-          "text": "Tap to unmuteLike I just met a"
+          "text": "Tap to unmute@ReLikeVibesSubsc"
         }
       ]
     },
@@ -1128,7 +1129,7 @@
           "kids": [
             "div"
           ],
-          "text": "This box is perfect for this C"
+          "text": "Only REAL places here!😁Tap to"
         },
         {
           "tag": "div",
@@ -1144,7 +1145,7 @@
             "div",
             "dom-if"
           ],
-          "text": "This box is perfect for this C"
+          "text": "Only REAL places here!😁Tap to"
         }
       ]
     },
@@ -1178,7 +1179,7 @@
           "kids": [
             "div"
           ],
-          "text": "Tap to unmuteLike I just met a"
+          "text": "Tap to unmute@ReLikeVibesSubsc"
         }
       ]
     },
@@ -1244,7 +1245,7 @@
             "yt-section-header-view-model",
             "div"
           ],
-          "text": "ShortsNewWHAT IF MINECRAFT LIV"
+          "text": "ShortsNewBest Minecraft Christ"
         }
       ]
     },
@@ -1295,13 +1296,13 @@
           "kids": [
             "div"
           ],
-          "text": "Best Minecraft Christmas 🎄🎁5"
+          "text": "THE END UPDATE IS HERE! (ender"
         }
       ]
     },
     "block.css|.ytsb-hide-feeds ytm-search ytm-video-with-context-renderer:has(a[href^=\"/shorts/\"])": {
       "scenarios": {
-        "mobile-search": 7
+        "mobile-search": 6
       },
       "fps": [
         {
@@ -1348,6 +1349,51 @@
         }
       ]
     },
+    "block.css|.ytsb-hide-feeds ytd-rich-grid-renderer[is-shorts-grid]": {
+      "scenarios": {
+        "desktop-short": 1
+      },
+      "fps": [
+        {
+          "tag": "html",
+          "id": "",
+          "cls": [],
+          "attrs": [
+            "lang",
+            "darker-dark-theme",
+            "darker-dark-theme-deprecate",
+            "system-icons",
+            "color-version",
+            "typography",
+            "typography-spacing"
+          ],
+          "parent": "",
+          "kids": [
+            "head",
+            "body"
+          ],
+          "text": "body {transition: opacity ease"
+        },
+        {
+          "tag": "ytd-rich-grid-renderer",
+          "id": "",
+          "cls": [
+            "ytd-engagement-panel-section-list-renderer"
+          ],
+          "attrs": [
+            "elements-per-row",
+            "is-shorts-panel",
+            "is-shorts-grid",
+            "panel-target-id"
+          ],
+          "parent": "div",
+          "kids": [
+            "div"
+          ],
+          "text": "Time@HansZimmer"
+        }
+      ]
+    },
     "block.css|.ytsb-hide-feeds ytd-reel-shelf-renderer": {
       "scenarios": {
         "desktop-channel": 1
@@ -1384,7 +1430,7 @@
           "kids": [
             "div"
           ],
-          "text": "Shorts one for each day of the"
+          "text": "Shorts @souravjvlogs never los"
         }
       ]
     },
@@ -1419,7 +1465,7 @@
           "kids": [
             "div"
           ],
-          "text": "Shortsone for each day of the "
+          "text": "Shorts@souravjvlogs never lost"
         }
       ]
     },
